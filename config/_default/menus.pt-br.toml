@@ -1,0 +1,144 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+[[main]]
+ name = "Inicio"
+ pageRef = "/"
+ weight = 10
+
+[[main]]
+ name = "Sobre"
+ pageRef = "/sobre"
+ weight = 20
+
+[[main]]
+ name = "Equipe"
+ pageRef = "/equipe"
+ weight = 30
+
+[[main]]
+ name = "Integrantes"
+ parent = "Equipe"
+ pageRef = "/equipe/integrantes"
+ weight = 10
+
+[[main]]
+ name = "Ex-integrantes"
+ parent = "Equipe"
+ pageRef = "/equipe/ex-integrantes"
+ weight = 20
+
+[[main]]
+ name = "Iniciação científica"
+ parent = "Equipe"
+ pageRef = "/equipe/iniciacao-cientifica"
+ weight = 30
+
+[[main]]
+ name = "Galeria"
+ pareReg = "/galeria"
+ weight = 40
+
+[[main]]
+ name = "Eventos"
+ pareReg = "/eventos"
+ weight = 40
+
+[[main]]
+ name = "Brincando de Matemático"
+ parent = "Eventos"
+ pageRef = "/eventos/brincando-de-matematico"
+ weight = 10
+
+[[main]]
+ name = "Brincando de Matemático Junior"
+ parent = "Eventos"
+ pageRef = "/eventos/brincando-de-matematico-junior"
+ weight = 20
+
+[[main]]
+ name = "Jornada da Matemática"
+ parent = "Eventos"
+ pageRef = "/equipe/j3m"
+ weight = 30
+
+[[main]]
+ name = "Semana da Matemática"
+ parent = "Eventos"
+ pageRef = "/equipe/semana-da-matematica"
+ weight = 40
+
+[[main]]
+ name = "Seminário Henri-Poincaré"
+ parent = "Eventos"
+ pageRef = "/equipe/seminario-henri-poincare"
+ weight = 50
+
+[[main]]
+ name = "Um Dia na Matemática"
+ parent = "Eventos"
+ pageRef = "/equipe/um-dia-na-matematica"
+ weight = 40
+
+[[main]]
+ name = "Documentos"
+ pareReg = "/documentos"
+ weight = 50
+
+[[main]]
+ name = "Certificados"
+ parent = "Documentos"
+ pageRef = "/documentos/certificados"
+ weight = 10
+
+[[main]]
+ name = "MOBPET"
+ parent = "Documentos"
+ pageRef = "/documentos/mobpeet"
+ weight = 20
+
+[[main]]
+ name = "Portaria nº 976"
+ parent = "Documentos"
+ pageRef = "/documentos/portaria-976"
+ weight = 30
+
+[[main]]
+ name = "Resolução nº 30/14-CEPE"
+ parent = "Documentos"
+ pageRef = "/documentos/resolucao-30-14-cepe"
+ weight = 40
+
+# [[subnavigation]]
+#  name = "An interesting topic"
+#  pageRef = "tags/interesting-topic"
+#  weight = 10
+
+# [[subnavigation]]
+#  name = "My Awesome Category"
+#  pre = "github"
+#  pageRef = "categories/awesome"
+#  weight = 20
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+[[footer]]
+  name = "Contato"
+  pageRef = "/contato"
+  weight = 10
+
+# [[footer]]
+#   name = "Categories"
+#   pageRef = "categories"
+#   weight = 20

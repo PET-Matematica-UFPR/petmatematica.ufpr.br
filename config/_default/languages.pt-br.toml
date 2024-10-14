@@ -1,0 +1,13 @@
+disabled = false
+languageCode = "pt-br"
+languageName = "Português brasileiro"
+weight = 1
+title = "PET Matemática UFPR"
+
+[params]
+displayName = "pt-br"
+isoCode = "pt-br"
+rtl = false
+dateFormat = "2 Janeiro 2006"
+logo = "logo.png"
+description = "Programa de Educação Tutorial de Matemática da UFPR"
