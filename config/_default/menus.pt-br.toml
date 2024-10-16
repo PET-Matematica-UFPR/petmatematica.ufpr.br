@@ -1,7 +1,7 @@
 # -- Main Menu --
 # The main menu is displayed in the header at the top of the page.
 # Acceptable parameters are name, pageRef, page, url, title, weight.
-# 
+#
 # The simplest menu configuration is to provide:
 #   name = The name to be displayed for this menu link
 #   pageRef = The identifier of the page or section to link to
@@ -10,10 +10,10 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
-[[main]]
- name = "Inicio"
- pageRef = "/"
- weight = 10
+# [[main]]
+#  name = "Inicio"
+#  pageRef = "/"
+#  weight = 10
 
 [[main]]
  name = "Sobre"
@@ -117,6 +117,26 @@
  parent = "Documentos"
  pageRef = "/documentos/resolucao-30-14-cepe"
  weight = 40
+
+[[main]]
+ pre = "instagram"
+ identifier = "instagram"
+ url = "https://www.instagram.com/petmatematicaufpr/"
+ weight = 60
+
+# TODO corrigir o link do TikTok
+
+[[main]]
+ pre = "tiktok"
+ identifier = "tiktok"
+ url = "https://www.instagram.com/petmatematicaufpr/"
+ weight = 70
+
+ [[main]]
+ pre = "youtube"
+ identifier = "youtube"
+ url = "https://www.youtube.com/channel/UC8EWvUqRiJerNlxfpy0lILg"
+ weight = 80
 
 # [[subnavigation]]
 #  name = "An interesting topic"

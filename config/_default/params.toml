@@ -1,9 +1,10 @@
-colorScheme = "avocado"
+colorScheme = "fire"
 defaultAppearance = "light"
 autoSwitchAppearance = false
 enableSearch = false
 enableCodeCopy = false
 replyByEmail = false
+disableImageZoom = true
 disableImageOptimization = false
 disableTextInHeader = false
 giteaDefaultServer = "https://git.fsfe.org"

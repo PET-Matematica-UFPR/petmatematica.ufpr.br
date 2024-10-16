@@ -16,9 +16,11 @@ O PET objetiva envolver os estudantes participantes num processo de formação i
 Até o ano de 1999, o Programa foi coordenado pela CAPES. A partir de 31 de dezembro de 1999, o PET teve sua gestão transferida para a Secretaria de Educação Superior (SESu/MEC), ficando sob a responsabilidade do Departamento de Modernização e Programas da Educação Superior (DEPEM). Desde então, vem sendo executado, levando em conta as diretrizes e os interesses acadêmicos das Universidades às quais se vincula, e que passaram a ser responsáveis por sua estruturação e coordenação.
 </p>
 
+<div>
 Objetivos do programa:
 
 - Melhoria do ensino de graduação
 - Interdisciplinaridade
 - Formação acadêmica ampla
 - Atuação coletiva, planejamento e execução
+</div>
