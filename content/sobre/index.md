@@ -19,8 +19,8 @@ Até o ano de 1999, o Programa foi coordenado pela CAPES. A partir de 31 de deze
 <div>
 Objetivos do programa:
 
-- Melhoria do ensino de graduação
-- Interdisciplinaridade
-- Formação acadêmica ampla
-- Atuação coletiva, planejamento e execução
+- Melhoria do ensino de graduação;
+- Interdisciplinaridade;
+- Formação acadêmica ampla;
+- Atuação coletiva, planejamento e execução.
 </div>
