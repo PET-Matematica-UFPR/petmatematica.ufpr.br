@@ -31,17 +31,17 @@
  pageRef = "/equipe/integrantes"
  weight = 10
 
-[[main]]
- name = "Ex-integrantes"
- parent = "Equipe"
- pageRef = "/equipe/ex-integrantes"
- weight = 20
+# [[main]]
+#  name = "Ex-integrantes"
+#  parent = "Equipe"
+#  pageRef = "/equipe/ex-integrantes"
+#  weight = 20
 
-[[main]]
- name = "Iniciação científica"
- parent = "Equipe"
- pageRef = "/equipe/iniciacao-cientifica"
- weight = 30
+# [[main]]
+#  name = "Iniciação científica"
+#  parent = "Equipe"
+#  pageRef = "/equipe/iniciacao-cientifica"
+#  weight = 30
 
 [[main]]
  name = "Galeria"
@@ -53,17 +53,17 @@
  pareReg = "/eventos"
  weight = 40
 
-[[main]]
- name = "Brincando de Matemático"
- parent = "Eventos"
- pageRef = "/eventos/brincando-de-matematico"
- weight = 10
+# [[main]]
+#  name = "Brincando de Matemático"
+#  parent = "Eventos"
+#  pageRef = "/eventos/brincando-de-matematico"
+#  weight = 10
 
-[[main]]
- name = "Brincando de Matemático Junior"
- parent = "Eventos"
- pageRef = "/eventos/brincando-de-matematico-junior"
- weight = 20
+# [[main]]
+#  name = "Brincando de Matemático Junior"
+#  parent = "Eventos"
+#  pageRef = "/eventos/brincando-de-matematico-junior"
+#  weight = 20
 
 [[main]]
  name = "Jornada da Matemática"
@@ -71,11 +71,11 @@
  pageRef = "/equipe/j3m"
  weight = 30
 
-[[main]]
- name = "Semana da Matemática"
- parent = "Eventos"
- pageRef = "/equipe/semana-da-matematica"
- weight = 40
+# [[main]]
+#  name = "Semana da Matemática"
+#  parent = "Eventos"
+#  pageRef = "/equipe/semana-da-matematica"
+#  weight = 40
 
 [[main]]
  name = "Seminário Henri-Poincaré"
@@ -83,11 +83,11 @@
  pageRef = "/equipe/seminario-henri-poincare"
  weight = 50
 
-[[main]]
- name = "Um Dia na Matemática"
- parent = "Eventos"
- pageRef = "/equipe/um-dia-na-matematica"
- weight = 40
+# [[main]]
+#  name = "Um Dia na Matemática"
+#  parent = "Eventos"
+#  pageRef = "/equipe/um-dia-na-matematica"
+#  weight = 40
 
 [[main]]
  name = "Documentos"

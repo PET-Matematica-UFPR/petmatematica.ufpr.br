@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "NODE_ENV=development concurrently -p \"[{name}]\" -n \"Tailwind CSS,Hugo\" -c \"blue,green\" \"./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w\" \"hugo serve --cleanDestinationDir -D --noHTTPCache\" ",
     "build": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit && hugo --cleanDestinationDir -e production --minify",
-    "bootstrap": "npm i && npm --prefix themes/blowfish/ install"
+    "bootstrap": "npm i && npm --prefix themes/blowfish/ install",
+    "new": "hugo new content"
   },
   "devDependencies": {
     "concurrently": "^9.0.1"

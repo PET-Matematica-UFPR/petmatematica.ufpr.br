@@ -8,8 +8,10 @@
 {{ range $content.items }}
     {{ if or (strings.HasPrefix .image "http:") (strings.HasPrefix .image "https:") }}
         {{ $images = $images | append (resources.GetRemote .image) }}
+    {{ else if ($found := $page.Match .image) }}
+        {{ $images = $images | append $found }}
     {{ else }}
-        {{ $images = $images | append ($page.Match .image) }}
+        {{ $images = $images | append (resources.Get .image) }}
     {{ end }}
 {{ end }}
 
