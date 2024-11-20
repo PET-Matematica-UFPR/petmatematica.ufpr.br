@@ -68,7 +68,7 @@
 [[main]]
  name = "Jornada da Matemática"
  parent = "Eventos"
- pageRef = "/equipe/j3m"
+ pageRef = "/j3m"
  weight = 30
 
 # [[main]]
