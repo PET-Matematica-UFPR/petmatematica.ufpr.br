@@ -103,19 +103,19 @@
 [[main]]
  name = "MOBPET"
  parent = "Documentos"
- pageRef = "/documentos/mobpeet"
+ url = "/arquivos/documentos/mobpet.pdf"
  weight = 20
 
 [[main]]
  name = "Portaria nº 976"
  parent = "Documentos"
- pageRef = "/documentos/portaria-976"
+ url = "/arquivos/documentos/portaria_976.pdf"
  weight = 30
 
 [[main]]
  name = "Resolução nº 30/14-CEPE"
  parent = "Documentos"
- pageRef = "/documentos/resolucao-30-14-cepe"
+ url = "/arquivos/documentos/cepe_3014.pdf"
  weight = 40
 
 [[main]]
