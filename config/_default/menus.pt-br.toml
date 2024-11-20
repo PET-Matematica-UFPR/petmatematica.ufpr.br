@@ -77,11 +77,11 @@
 #  pageRef = "/equipe/semana-da-matematica"
 #  weight = 40
 
-[[main]]
- name = "Seminário Henri-Poincaré"
- parent = "Eventos"
- pageRef = "/equipe/seminario-henri-poincare"
- weight = 50
+# [[main]]
+#  name = "Seminário Henri-Poincaré"
+#  parent = "Eventos"
+#  pageRef = "/equipe/seminario-henri-poincare"
+#  weight = 50
 
 # [[main]]
 #  name = "Um Dia na Matemática"
