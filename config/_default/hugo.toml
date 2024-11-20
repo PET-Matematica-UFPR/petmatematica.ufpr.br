@@ -16,6 +16,7 @@ anchor = "Center"
 [taxonomies]
 tag = "tags"
 category = "categories"
+evento = "eventos"
 
 [sitemap]
 changefreq = "daily"

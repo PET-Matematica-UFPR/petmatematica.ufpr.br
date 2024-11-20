@@ -45,12 +45,12 @@
 
 [[main]]
  name = "Galeria"
- pareReg = "/galeria"
+ pareRef = "/galeria"
  weight = 40
 
 [[main]]
  name = "Eventos"
- pareReg = "/eventos"
+ pareRef = "/eventos"
  weight = 40
 
 # [[main]]
@@ -68,7 +68,7 @@
 [[main]]
  name = "Jornada da Matemática"
  parent = "Eventos"
- pageRef = "/j3m"
+ pageRef = "/eventos/j3m"
  weight = 30
 
 # [[main]]
@@ -91,7 +91,7 @@
 
 [[main]]
  name = "Documentos"
- pareReg = "/documentos"
+ pareRef = "/documentos"
  weight = 50
 
 [[main]]
