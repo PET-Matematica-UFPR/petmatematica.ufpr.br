@@ -17,5 +17,3 @@ alt = "J3M banner"
 href = "/j3m"
 
 ` >}}
-
-Etiam bibendum viverra nisi et vehicula. Nullam vel mi tortor. Sed id urna vel eros gravida gravida in pulvinar tellus. 
