@@ -75,7 +75,7 @@ descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
-[[integrantes]]
+[[ex-integrantes]]
 nome = "Ana Cleo Matias Vieira da Motta"
 imagem = "/img/equipe/AnaCleo.webp"
 descricao = "Lorem ipsum dolor sit amet."

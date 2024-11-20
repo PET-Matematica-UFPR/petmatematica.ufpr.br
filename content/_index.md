@@ -8,26 +8,14 @@ draft = false
 interval = "1000"
 
 [[items]]
+image = "img/banner/bem-vindo.webp"
+alt = "Bem-vindo ao site PET Matemática UFPR"
+
+[[items]]
 image = "img/banner/j3m.webp"
 alt = "J3M banner"
 href = "/j3m"
 
-[[items]]
-image = "img/banner/j3m_amarelo.webp"
-alt = "J3M banner"
-href = "/j3m"
-
-[[items]]
-image = "img/banner/j3m_roxo.webp"
-alt = "J3M banner"
-href = "/j3m"
-
-[[items]]
-image = "img/banner/j3m_rosa.webp"
-alt = "J3M banner"
-href = "/j3m"
 ` >}}
 
-Etiam bibendum viverra nisi et vehicula. Nullam vel mi tortor. Sed id urna vel eros gravida gravida in pulvinar tellus. Fusce nisl mauris, fermentum in mollis ac, aliquet et lectus. Duis consequat fringilla tortor quis luctus. Quisque luctus, nunc tincidunt facilisis lacinia, lectus diam tempus ex, ac rhoncus metus nisi non urna. Cras pellentesque ultricies nisi eu pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc at dui at justo molestie lobortis in nec mauris.
-
-Etiam bibendum viverra nisi et vehicula. Nullam vel mi tortor. Sed id urna vel eros gravida gravida in pulvinar tellus. Fusce nisl mauris, fermentum in mollis ac, aliquet et lectus. Duis consequat fringilla tortor quis luctus. Quisque luctus, nunc tincidunt facilisis lacinia, lectus diam tempus ex, ac rhoncus metus nisi non urna. Cras pellentesque ultricies nisi eu pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc at dui at justo molestie lobortis in nec mauris.
+Etiam bibendum viverra nisi et vehicula. Nullam vel mi tortor. Sed id urna vel eros gravida gravida in pulvinar tellus. 

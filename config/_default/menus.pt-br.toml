@@ -124,12 +124,10 @@
  url = "https://www.instagram.com/petmatematicaufpr/"
  weight = 60
 
-# TODO corrigir o link do TikTok
-
 [[main]]
  pre = "tiktok"
  identifier = "tiktok"
- url = "https://www.instagram.com/petmatematicaufpr/"
+ url = "https://www.tiktok.com/@petmatematicaufpr"
  weight = 70
 
  [[main]]
