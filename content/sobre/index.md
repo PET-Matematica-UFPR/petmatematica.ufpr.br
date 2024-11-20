@@ -1,7 +1,8 @@
 +++
 title = 'Sobre'
-date = 2024-10-13T14:00:51-03:00
 draft = false
+
+showdate = false
 +++
 
 Criado e implantado em 1979 pela CAPES, o Programa de Educação Tutorial é um programa acadêmico direcionado a alunos regularmente matriculados em cursos de graduação. Os alunos participantes do PET se organizam em grupos, recebendo orientação acadêmica de professores tutores.

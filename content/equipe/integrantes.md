@@ -1,10 +1,10 @@
 +++
 title = 'Integrantes'
-date = 2024-10-20T09:12:06-03:00
 draft = false
-prose = false
-+++
 
+prose = false
+showdate = false
++++
 Sob a orientação de um tutor dedicado, o grupo PET promove o desenvolvimento acadêmico e pessoal dos alunos, integrando ensino, pesquisa e extensão. A missão é formar profissionais com uma visão ampla do mundo, capacitados para enfrentar os desafios da sociedade atual, e prontos para contribuir com a transformação da realidade ao seu redor.
 
 O papel do tutor é fundamental para o sucesso das atividades. Cabe a ele planejar, supervisionar e orientar os alunos, garantindo que o grupo alcance seus objetivos acadêmicos e de formação cidadã. O tutor estimula a participação ativa dos alunos, promove debates e orienta atividades de pesquisa e extensão. A relação de proximidade entre tutor e alunos é o que permite o desenvolvimento de habilidades críticas, como resolução de problemas e pensamento independente, características essenciais para a formação de profissionais comprometidos com a ética e a responsabilidade social.
