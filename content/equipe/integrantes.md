@@ -1,5 +1,5 @@
 +++
-title = 'Integrantes'
+title = "Integrantes"
 draft = false
 
 prose = false

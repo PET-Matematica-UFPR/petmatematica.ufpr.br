@@ -1,5 +1,5 @@
 +++
-title = 'PET Matemática UFPR'
+title = "PET Matemática UFPR"
 date = 2024-10-15T20:34:07-03:00
 draft = false
 +++
@@ -14,6 +14,6 @@ alt = "Bem-vindo ao site PET Matemática UFPR"
 [[items]]
 image = "img/banner/j3m.webp"
 alt = "J3M banner"
-href = "/j3m"
+href = "/eventos/j3m"
 
 ` >}}

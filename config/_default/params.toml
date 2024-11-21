@@ -22,11 +22,11 @@ showScrollToTop = true
 
 [homepage]
 layout = "custom"
-showRecent = false
+showRecent = true
 showRecentItems = 5
-showMoreLink = false
+showMoreLink = true
 showMoreLinkDest = "/posts/"
-cardView = false
+cardView = true
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
 
@@ -67,7 +67,7 @@ showTableOfContents = false
 showCards = false
 orderByWeight = false
 groupByYear = true
-cardView = false
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = false
 
@@ -81,7 +81,7 @@ showBreadcrumbs = false
 showViews = false
 showLikes = false
 showTableOfContents = false
-cardView = false
+cardView = true
 
 [term]
 showHero = false
@@ -89,8 +89,8 @@ showBreadcrumbs = false
 showViews = false
 showLikes = false
 showTableOfContents = true
-groupByYear = false
-cardView = false
+groupByYear = true
+cardView = true
 cardViewScreenWidth = false
 heroStyle = ""
 

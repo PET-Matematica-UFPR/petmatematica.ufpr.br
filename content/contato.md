@@ -1,6 +1,5 @@
 +++
-title = 'Contato'
-date = 2024-11-20T15:43:26-03:00
+title = "Contato"
 draft = false
 
 showdate = false
