@@ -15,4 +15,4 @@ Os alunos, sejam bolsistas ou não, são o coração do programa. Envolvidos em 
 
 {{< card-integrantes >}}
 
-<!-- Além dos membros atuais, o grupo PET Matemática da UFPR valoriza a trajetória de todos que já passaram pelo programa. Confira os ex-integrantes. -->
+Além dos membros atuais, o grupo PET Matemática da UFPR valoriza a trajetória de todos que já passaram pelo programa. Confira os [ex-integrantes](/equipe/ex-integrantes).

@@ -31,11 +31,11 @@
  pageRef = "/equipe/integrantes"
  weight = 10
 
-# [[main]]
-#  name = "Ex-integrantes"
-#  parent = "Equipe"
-#  pageRef = "/equipe/ex-integrantes"
-#  weight = 20
+[[main]]
+ name = "Ex-integrantes"
+ parent = "Equipe"
+ pageRef = "/equipe/ex-integrantes"
+ weight = 20
 
 # [[main]]
 #  name = "Iniciação científica"
