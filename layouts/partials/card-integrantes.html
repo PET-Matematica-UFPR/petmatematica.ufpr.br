@@ -7,11 +7,13 @@
 
 {{ range $integrantes }}
   {{ if or (strings.HasPrefix .imagem "http:") (strings.HasPrefix .imagem "https:") }}
-      {{ $images = $images | append ($images resources.GetRemote .imagem).RelPermalink }}
+    {{ $images = $images | append ($images resources.GetRemote .imagem).RelPermalink }}
   {{ else if ($found := $page.Match .imagem) }}
-      {{ $images = $images | append $found.RelPermalink }}
+    {{ $images = $images | append $found.RelPermalink }}
   {{ else if ($found := resources.Get .imagem )}}
-      {{ $images = $images | append $found.RelPermalink }}
+    {{ $images = $images | append $found.RelPermalink }}
+  {{ else }}
+    {{ $images = $images | append .imagem }}
   {{ end }}
 {{ end }}
 

@@ -8,11 +8,11 @@ draft = false
 interval = "1000"
 
 [[items]]
-image = "img/banner/bem-vindo.webp"
+image = "arquivos/banner/bem-vindo.webp"
 alt = "Bem-vindo ao site PET Matemática UFPR"
 
 [[items]]
-image = "img/banner/j3m.webp"
+image = "arquivos/banner/j3m.webp"
 alt = "J3M banner"
 href = "/eventos/j3m"
 

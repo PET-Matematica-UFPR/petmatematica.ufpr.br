@@ -33,7 +33,6 @@ Se estiver usando o VS Code, é recomendado o uso do [terminal integrado](https:
 
 As documentação do [Hugo](https://gohugo.io/documentation/), [Blowfish](https://blowfish.page/docs/), [TW Elements](https://tw-elements.com/docs/standard/getting-started/quick-start/) e [Tailwind CSS](https://tailwindcss.com/docs/utility-first) são essenciais.
 
-
 ### Tailwind CSS
 
 O Tailwind css é uma biblioteca de estilos, ela nos da uma infinidade de classes. Vamos evitar escrever css's e usar apenas as classes dela. Por exemplo, para mudar a cor do texto e a cor de fundo basta escrever:
@@ -52,4 +51,4 @@ Beleza, o conteúdo das páginas fica em `content/`, mas como o Hugo converte es
 
 ### Blowfish
 
-É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da inúmeras 
+É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da inúmeros shortcodes pra por no site. 

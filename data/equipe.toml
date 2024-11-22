@@ -1,125 +1,125 @@
 [tutor]
 titulo = "Professor Tutor Cleber de Medeira"
-imagem = "img/equipe/Cleber.png"
+imagem = "/arquivos/equipe/Cleber.png"
 descricao = "Possui graduação em Matemática pela Universidade Estadual de Ponta Grossa (2006), Mestrado em Matemática Aplicada pela Universidade Federal do Paraná (2008) e Doutorado em Matemática pelo Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo - ICMC/USP (2012). Atualmente é professor associado da Universidade Federal do Paraná. Tem experiência na área de Análise Matemática, com ênfase em equações diferencias parciais lineares."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Pedro Henrique Andrade"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Ana Carla de Carvalho Honório"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Isabele Andrade Vichinieski"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Andressa Balestrin Dasenbrock"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Tiago Filipe Pires Galu"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Augusto Henrique da Costa"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Felipe Monteiro Kiotheka"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Lucas Xavier"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Daniel Thiago Ivanchechen"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Otavio Augusto Salomão Recacho"
-imagem = "/img/equipe/blank.webp"
+imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Lorem ipsum dolor sit amet."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Brenda Monteiro Dal Puppo Monteiro"
-imagem = "/img/equipe/Brenda.webp"
+imagem = "/arquivos/equipe/Brenda.webp"
 # descricao = "Consectetur adipiscing elit."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Elissandro Antonio Sikora"
-imagem = "/img/equipe/Elissandro.webp"
+imagem = "/arquivos/equipe/Elissandro.webp"
 # descricao = "Curabitur et nisi aliquam."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Kaiky Yuji Ishiy"
-imagem = "/img/equipe/Kaiky.webp"
+imagem = "/arquivos/equipe/Kaiky.webp"
 # descricao = "Venenatis neque ac."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Laura Carolina Aymore Ferrandin"
-imagem = "/img/equipe/Laura.webp"
+imagem = "/arquivos/equipe/Laura.webp"
 # descricao = "Tincidunt odio"
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Leonardo Cortez do Nascimento"
-imagem = "/img/equipe/Leonardo.webp"
+imagem = "/arquivos/equipe/Leonardo.webp"
 # descricao = "Duis volutpat ligula ut lacinia sollicitudin."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Pedro Dell'Agnolo Busarello"
-imagem = "/img/equipe/Pedro.webp"
+imagem = "/arquivos/equipe/Pedro.webp"
 # descricao = "Curabitur elementum vitae odio nec ultricies."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Samuel Adams Trindade de Souza"
-imagem = "/img/equipe/Samuel.webp"
+imagem = "/arquivos/equipe/Samuel.webp"
 # descricao = "Phasellus nec tellus porttitor sem interdum tristique."
 lattes = "0555030394187310"
 orcid = "0000-0003-0804-6145"

@@ -12,6 +12,8 @@
         {{ $images = $images | append $found.RelPermalink }}
     {{ else if ($found := resources.Get .image) }}
         {{ $images = $images | append $found.RelPermalink }}
+    {{ else }}
+        {{ $images = $images | append .image }}
     {{ end }}
 {{ end }}
 
