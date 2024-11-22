@@ -7,8 +7,8 @@ tags = ["2024", "edital"]
 eventos = ["j3m"]
 +++
 
-Nesse ano, a 8ª edição da Jornada da Matemática, Matemática Aplicada e Educação Matemática conta com um edital. [Confira](/arquivos/j3m/2024/edital.pdf).
+Nesse ano, a 8ª edição da Jornada da Matemática, Matemática Aplicada e Educação Matemática conta com um edital. [Confira](/arquivos/2024/j3m/edital.pdf).
 
-{{< embed-pdf url="/arquivos/j3m/2024/Edital.pdf" >}}
+{{< embed-pdf url="/arquivos/2024/j3m/Edital.pdf" >}}
 
 Há dúvidas? Entre em [contato](/contato).

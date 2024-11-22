@@ -8,9 +8,9 @@ tags = ["2024", "cronograma"]
 eventos = ["j3m"]
 +++
 
-Estamos empolgados em anunciar o [cronograma](/arquivos/j3m/2024/Cronograma.pdf) da 8ª edição da Jornada de Matemática, Matemática Aplicada e Educação Matemática. Acompanhe nossas publicações para não perder nada dos quatro dias de programação. E não se esqueça de participar na Cerimônia de Premiação, que será realizada no último dia, 14/11, no auditório de Química às 19h00.
+Estamos empolgados em anunciar o [cronograma](/arquivos/2024/j3m/Cronograma.pdf) da 8ª edição da Jornada de Matemática, Matemática Aplicada e Educação Matemática. Acompanhe nossas publicações para não perder nada dos quatro dias de programação. E não se esqueça de participar na Cerimônia de Premiação, que será realizada no último dia, 14/11, no auditório de Química às 19h00.
 
-{{< embed-pdf url="/arquivos/j3m/2024/Cronograma.pdf" >}}
+{{< embed-pdf url="/arquivos/2024/j3m/Cronograma.pdf" >}}
 
 Lembre-se: as [inscrições de ouvintes](https://forms.gle/RZoWxbXxHu8vhrWH8) vão até 25/10/2024 para quem utilizar o R.U e até 02/11/2024 para os demais.
 

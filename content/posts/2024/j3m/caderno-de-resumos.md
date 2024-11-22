@@ -7,8 +7,8 @@ tags = ["2024"]
 eventos = ["j3m"]
 +++
 
-Confira o [Caderno de Resumos](/arquivos/j3m/2024/CadernoDeResumos.pdf) para explorar os temas abordados nas apresentações deste ano.
+Confira o [Caderno de Resumos](/arquivos/2024/j3m/CadernoDeResumos.pdf) para explorar os temas abordados nas apresentações deste ano.
 
-{{< embed-pdf url="/arquivos/j3m/2024/CadernoDeResumos.pdf" >}}
+{{< embed-pdf url="/arquivos/2024/j3m/CadernoDeResumos.pdf" >}}
 
 Após o evento esse documento será atualizado, adicionando as bancas avaliadoras.
