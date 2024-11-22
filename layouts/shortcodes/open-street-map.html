@@ -4,16 +4,16 @@
 {{- $img := .Get "mapImg" -}}
 
 {{ if or (strings.HasPrefix $img "http:") (strings.HasPrefix $img "https:") }}
-  {{ $img = resources.GetRemote $img }}
+  {{ $img = (resources.GetRemote $img).RelPermalink }}
 {{ else if ($found := .Page.Resources.Get $img) }}
-    {{ $img = $found }}
-{{ else }}
-  {{ $img = resources.Get $img }}
+    {{ $img = $found.RelPermalink }}
+{{ else if ($found := resources.Get $img) }}
+  {{ $img = $found.RelPermalink }}
 {{ end }}
 
 <div class="container" id="map-container-{{ $id }}" style="cursor: pointer;">
     <figure>
-        <img class="img-fluid" loading="lazy" id="static-map-{{ $id }}" src="{{ $img.RelPermalink }}" alt="{{ .Get "alt" }}" title="{{ .Get "title" }} Clique para ver o mapa interativo" width="1280" height="450">
+        <img class="img-fluid" loading="lazy" id="static-map-{{ $id }}" src="{{ $img }}" alt="{{ .Get "alt" }}" title="{{ .Get "title" }} Clique para ver o mapa interativo" width="1280" height="450">
         <figcaption>Clique para ver o mapa interativo<a href="https://www.openstreetmap.org/copyright" rel="noreferrer noopener" target="_blank"><small><span class="float-end">©OpenStreetMap</span></small></a>                    
         </figcaption>
     </figure>

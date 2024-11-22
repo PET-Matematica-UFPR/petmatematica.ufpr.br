@@ -5,11 +5,11 @@
 {{ $image := $content.imagem }}
 
 {{ if or (strings.HasPrefix $image "http:") (strings.HasPrefix $image "https:") }}
-    {{ $image = resources.GetRemote $image }}
+    {{ $image = (resources.GetRemote $image).RelPermalink }}
 {{ else if ($found := $page.Match $image) }}
-    {{ $image = $found }}
-{{ else }}
-    {{ $image = resources.Get $image }}
+    {{ $image = $found.RelPermalink }}
+{{ else if ($found := resources.Get $image) }}
+    {{ $image = $found.RelPermalink }}
 {{ end }}
 
 <div
@@ -21,7 +21,7 @@
   class="
     w-full rounded-t-lg object-cover not-prose 
     md:h-fill md:w-56 md:!rounded-none md:!rounded-s-lg"
-  src="{{ $image.RelPermalink }}"
+  src="{{ $image }}"
   {{ if $content.alt }} alt="{{ $content.alt }}" {{ else }} alt="Foto {{ $content.titulo }}" {{ end }}/>
   {{ end }}
   <div class="flex flex-col justify-start p-6">

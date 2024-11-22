@@ -7,15 +7,16 @@
 {{ $imagesTemp = strings.TrimSuffix "}" $imagesTemp  }}
 {{ $imagesTemp := strings.Split $imagesTemp "," }}
 {{ $images := slice}}
+
 {{ range $imagesTemp }}
     {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-        {{ $images = $images | append (resources.GetRemote .) }}
-    {{ else }}
-        {{ $images = $images | append ($page.Match .) }}
+		{{ $images = $images | append (resources.GetRemote .).RelPermalink }}
+    {{ else if ($found := $page.Match .) }}
+        {{ $images = $images | append $found.RelPermalink }}
+    {{ else if ($found := resources.Get .image) }}
+		{{ $images = $images | append $found.RelPermalink }}
     {{ end }}
 {{ end }}
-
-{{ . | debug.Dump }}
 
 <div
   id="{{ $id }}"
@@ -35,7 +36,7 @@
       data-twe-carousel-item
       {{ if eq $num 0 }} data-twe-carousel-active {{ end }}>
       <img
-        src="{{ .RelPermalink }}"
+        src="{{ . }}"
         class="block w-full"
         alt="Imagem {{ $num }}" />
     </div>

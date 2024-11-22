@@ -7,11 +7,11 @@
 
 {{ range $content.items }}
     {{ if or (strings.HasPrefix .image "http:") (strings.HasPrefix .image "https:") }}
-        {{ $images = $images | append (resources.GetRemote .image) }}
+        {{ $images = $images | append ((resources.GetRemote .image).RelPermalink) }}
     {{ else if ($found := $page.Match .image) }}
-        {{ $images = $images | append $found }}
-    {{ else }}
-        {{ $images = $images | append (resources.Get .image) }}
+        {{ $images = $images | append $found.RelPermalink }}
+    {{ else if ($found := resources.Get .image) }}
+        {{ $images = $images | append $found.RelPermalink }}
     {{ end }}
 {{ end }}
 
@@ -34,7 +34,7 @@
       {{ if eq $num 0 }} data-twe-carousel-active {{ end }}>
       {{ if $v.href }} <a href="{{ $v.href }}"> {{ end }}
       <img
-        src="{{ (index $images $k ).RelPermalink }}"
+        src="{{ index $images $k }}"
         class="block w-full not-prose"
         alt="{{ $v.alt }}" />
       {{ if $v.href }} </a> {{ end }}

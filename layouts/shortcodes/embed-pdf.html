@@ -83,36 +83,36 @@
 {{- $pdf := .Get "url" -}}
 
 {{ if or (strings.HasPrefix $pdf "http:") (strings.HasPrefix $pdf "https:") }}
-  {{ $pdf = resources.GetRemote $pdf }}
+  {{ $pdf = (resources.GetRemote $pdf).RelPermalink }}
 {{ else if ($found := .Page.Resources.Get $pdf) }}
-    {{ $pdf = $found }}
-{{ else }}
-  {{ $pdf = resources.Get $pdf }}
+    {{ $pdf = $found.RelPermalink }}
+{{ else if ($found := resources.Get $pdf)}}
+  {{ $pdf = $found.RelPermalink }}
 {{ end }}
 
-<div class="embed-pdf-container" id="embed-pdf-container-{{ substr ($pdf.RelPermalink | md5) 0 8 }}">
-    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ substr ($pdf.RelPermalink | md5) 0 8 }}">
-        <div class="pdf-loading" id="pdf-loading-{{ substr ($pdf.RelPermalink | md5) 0 8 }}"></div>
+<div class="embed-pdf-container" id="embed-pdf-container-{{ substr ($pdf | md5) 0 8 }}">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ substr ($pdf | md5) 0 8 }}">
+        <div class="pdf-loading" id="pdf-loading-{{ substr ($pdf | md5) 0 8 }}"></div>
     </div>
-    <canvas class="pdf-canvas" id="pdf-canvas-{{ substr ($pdf.RelPermalink | md5) 0 8 }}"></canvas>
+    <canvas class="pdf-canvas" id="pdf-canvas-{{ substr ($pdf | md5) 0 8 }}"></canvas>
 </div>
 
-<div class="pdf-paginator" id="pdf-paginator-{{ substr ($pdf.RelPermalink | md5) 0 8 }}">
-    <button id="pdf-prev-{{ substr ($pdf.RelPermalink | md5) 0 8 }}">Anterior</button>
-    <button id="pdf-next-{{ substr ($pdf.RelPermalink | md5) 0 8 }}">Próximo</button> &nbsp; &nbsp;
+<div class="pdf-paginator" id="pdf-paginator-{{ substr ($pdf | md5) 0 8 }}">
+    <button id="pdf-prev-{{ substr ($pdf | md5) 0 8 }}">Anterior</button>
+    <button id="pdf-next-{{ substr ($pdf | md5) 0 8 }}">Próximo</button> &nbsp; &nbsp;
     <span>
-      <span class="pdf-pagenum" id="pdf-pagenum-{{ substr ($pdf.RelPermalink | md5) 0 8 }}"></span> / <span class="pdf-pagecount" id="pdf-pagecount-{{ substr ($pdf.RelPermalink | md5) 0 8 }}"></span>
+      <span class="pdf-pagenum" id="pdf-pagenum-{{ substr ($pdf | md5) 0 8 }}"></span> / <span class="pdf-pagecount" id="pdf-pagecount-{{ substr ($pdf | md5) 0 8 }}"></span>
     </span>
-    <a class="pdf-source" id="pdf-source-{{ substr ($pdf.RelPermalink | md5) 0 8 }}" href="{{ $pdf.RelPermalink }}">[pdf]</a>
+    <a class="pdf-source" id="pdf-source-{{ substr ($pdf | md5) 0 8 }}" href="{{ $pdf }}">[pdf]</a>
 </div>
 
 <noscript>
-View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf.RelPermalink | md5) 0 8 }}" href="{{ $pdf.RelPermalink }}">here</a>.
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf | md5) 0 8 }}" href="{{ $pdf }}">here</a>.
 </noscript>
 
 <script type="text/javascript">
     (function(){
-    var url = '{{ $pdf.RelPermalink }}';
+    var url = '{{ $pdf }}';
 
     var hidePaginator = "{{ .Get "hidePaginator" }}" === "true";
     var hideLoader = "{{ .Get "hideLoader" }}" === "true";
@@ -131,10 +131,10 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf.
         pageRendering = false,
         pageNumPending = null,
         scale = 3,
-        canvas = document.getElementById('pdf-canvas-{{ substr ($pdf.RelPermalink | md5) 0 8 }}'),
+        canvas = document.getElementById('pdf-canvas-{{ substr ($pdf | md5) 0 8 }}'),
         ctx = canvas.getContext('2d'),
-        paginator = document.getElementById("pdf-paginator-{{ substr ($pdf.RelPermalink | md5) 0 8 }}"),
-        loadingWrapper = document.getElementById('pdf-loadingWrapper-{{ substr ($pdf.RelPermalink | md5) 0 8 }}');
+        paginator = document.getElementById("pdf-paginator-{{ substr ($pdf | md5) 0 8 }}"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-{{ substr ($pdf | md5) 0 8 }}');
 
 
     // Attempt to show paginator and loader if enabled
@@ -174,7 +174,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf.
       });
 
       // Update page counters
-      document.getElementById('pdf-pagenum-{{ substr ($pdf.RelPermalink | md5) 0 8 }}').textContent = num;
+      document.getElementById('pdf-pagenum-{{ substr ($pdf | md5) 0 8 }}').textContent = num;
     }
 
     /**
@@ -224,7 +224,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf.
       pageNum--;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-prev-{{ substr ($pdf.RelPermalink | md5) 0 8 }}').addEventListener('click', onPrevPage);
+    document.getElementById('pdf-prev-{{ substr ($pdf | md5) 0 8 }}').addEventListener('click', onPrevPage);
 
     /**
      * Displays next page.
@@ -236,7 +236,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf.
       pageNum++;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-next-{{ substr ($pdf.RelPermalink | md5) 0 8 }}').addEventListener('click', onNextPage);
+    document.getElementById('pdf-next-{{ substr ($pdf | md5) 0 8 }}').addEventListener('click', onNextPage);
 
     /**
      * Asynchronously downloads PDF.
@@ -244,7 +244,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf.
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
       pdfDoc = pdfDoc_;
       var numPages = pdfDoc.numPages;
-      document.getElementById('pdf-pagecount-{{ substr ($pdf.RelPermalink | md5) 0 8 }}').textContent = numPages;
+      document.getElementById('pdf-pagecount-{{ substr ($pdf | md5) 0 8 }}').textContent = numPages;
 
       // If the user passed in a number that is out of range, render the last page.
       if(pageNum > numPages) {

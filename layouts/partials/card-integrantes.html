@@ -7,11 +7,11 @@
 
 {{ range $integrantes }}
   {{ if or (strings.HasPrefix .imagem "http:") (strings.HasPrefix .imagem "https:") }}
-      {{ $images = $images | append ($images resources.GetRemote .imagem) }}
+      {{ $images = $images | append ($images resources.GetRemote .imagem).RelPermalink }}
   {{ else if ($found := $page.Match .imagem) }}
-      {{ $images = $images | append $found }}
-  {{ else }}
-      {{ $images = $images | append (resources.Get .imagem) }}
+      {{ $images = $images | append $found.RelPermalink }}
+  {{ else if ($found := resources.Get .imagem )}}
+      {{ $images = $images | append $found.RelPermalink }}
   {{ end }}
 {{ end }}
 
@@ -26,7 +26,7 @@
 
     <img
         class="w-32 rounded-full mx-auto mt-4 not-prose"
-        src="{{ (index $images $index).RelPermalink }}"
+        src="{{ index $images $index }}"
         alt="Foto {{ $integrante.nome }}" />
 
     <div class="p-4 my-auto">
