@@ -53,11 +53,11 @@
  pareRef = "/eventos"
  weight = 40
 
-# [[main]]
-#  name = "Brincando de Matemático"
-#  parent = "Eventos"
-#  pageRef = "/eventos/brincando-de-matematico"
-#  weight = 10
+[[main]]
+ name = "Brincando de Matemático"
+ parent = "Eventos"
+ pageRef = "/eventos/bdm"
+ weight = 10
 
 # [[main]]
 #  name = "Brincando de Matemático Junior"
