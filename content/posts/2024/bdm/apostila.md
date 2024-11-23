@@ -7,4 +7,4 @@ tags = ["caderno"]
 eventos = ["bdm"]
 +++
 
-{{< embed-pdf url="/arquivos/2024/bdm_apostila_2024.pdf" >}}
+{{< embed-pdf url="/arquivos/2024/bdm/bdm_apostila_2024.pdf" >}}
