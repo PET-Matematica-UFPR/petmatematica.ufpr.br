@@ -1,15 +1,7 @@
 {{ $page := .Page.Resources }}
 {{ $content := .Site.Data.equipe.tutor }}
 
-{{ $image := $content.imagem }}
-
-{{ if or (strings.HasPrefix $image "http:") (strings.HasPrefix $image "https:") }}
-    {{ $image = (resources.GetRemote $image).RelPermalink }}
-{{ else if ($found := $page.Match $image) }}
-    {{ $image = $found.RelPermalink }}
-{{ else if ($found := resources.Get $image) }}
-    {{ $image = $found.RelPermalink }}
-{{ end }}
+{{ $image := (partial "functions/get-resource.html" $content.imagem) }}
 
 <div
   class="

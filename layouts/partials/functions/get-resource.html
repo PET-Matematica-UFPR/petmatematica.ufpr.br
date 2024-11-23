@@ -1,0 +1,9 @@
+{{ $link := . }}
+
+{{ if or (strings.HasPrefix $link "http:") (strings.HasPrefix $link "https:") }}
+    {{ $link = (resources.GetRemote $link).RelPermalink }}
+{{ else if ($found := resources.Get $link) }}
+    {{ $link = $found.RelPermalink }}
+{{ end }}
+
+{{ return $link }}

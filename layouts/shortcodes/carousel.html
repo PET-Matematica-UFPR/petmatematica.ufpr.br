@@ -1,33 +1,28 @@
-{{ $id := delimit (slice "carousel" (partial "functions/uid.html" .)) "-" }}
-{{ $interval := default "2000" (.Get "interval") }}
-
+{{ $content := .Get 0 }}
+{{ $content = transform.Unmarshal $content }}
 {{ $page := .Page.Resources }}
-{{ $imagesTemp := .Get "images" }}
-{{ $imagesTemp = strings.TrimPrefix "{" $imagesTemp  }}
-{{ $imagesTemp = strings.TrimSuffix "}" $imagesTemp  }}
-{{ $imagesTemp := strings.Split $imagesTemp "," }}
-{{ $images := slice}}
 
-{{ range $imagesTemp }}
-    {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-		{{ $images = $images | append (resources.GetRemote .).RelPermalink }}
-    {{ else if ($found := $page.Match .) }}
-        {{ $images = $images | append $found.RelPermalink }}
-    {{ else if ($found := resources.Get .image) }}
-		{{ $images = $images | append $found.RelPermalink }}
-    {{ end }}
+{{ $id := delimit (slice "carousel" (partial "functions/uid.html" .)) "-" }}
+{{ $images := slice }}
+
+{{ range $content.items }}
+  {{ $images = $images | append (partial "functions/get-resource.html" .imagem) }}
 {{ end }}
 
 <div
   id="{{ $id }}"
-  class="relative"
+  class="
+    relative w-screen max-w-[1600px] px-0
+    md:px-[100px] 
+  "
+  style="left: calc(max(-50vw,-800px) + 50%);"
   data-twe-carousel-init
   data-twe-ride="carousel">
   <!--Carousel items-->
   <div
     class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
     {{ $num := 0 }}
-    {{ range $images }}
+    {{ range $k, $v := $content.items }}
 
     <div
       class="relative float-left -mr-[100%]
@@ -35,10 +30,12 @@
       w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-twe-carousel-item
       {{ if eq $num 0 }} data-twe-carousel-active {{ end }}>
+      {{ if $v.href }} <a href="{{ $v.href }}"> {{ end }}
       <img
-        src="{{ . }}"
-        class="block w-full"
-        alt="Imagem {{ $num }}" />
+        src="{{ index $images $k }}"
+        class="block w-full not-prose"
+        alt="{{ $v.alt }}" />
+      {{ if $v.href }} </a> {{ end }}
     </div>
     
     {{ $num = add $num 1 }}
@@ -47,7 +44,11 @@
 
   <!--Carousel controls - prev item-->
   <button
-    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 
+    transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] 
+    hover:text-white hover:no-underline hover:opacity-90 hover:outline-none 
+    focus:text-white focus:no-underline focus:opacity-90 focus:outline-none 
+    motion-reduce:transition-none"
     type="button"
     data-twe-target="#{{ $id }}"
     data-twe-slide="prev">
