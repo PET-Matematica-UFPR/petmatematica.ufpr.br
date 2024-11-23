@@ -43,11 +43,11 @@
 #  pageRef = "/equipe/iniciacao-cientifica"
 #  weight = 30
 
-[[main]]
- name = "Galeria"
- pareRef = "/galeria"
- weight = 40
- active = false
+# [[main]]
+#  name = "Galeria"
+#  pareRef = "/galeria"
+#  weight = 40
+#  active = false
 
 [[main]]
  name = "Eventos"
