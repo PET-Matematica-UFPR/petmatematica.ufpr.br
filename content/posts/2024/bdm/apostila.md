@@ -1,7 +1,7 @@
 +++
 title = "Apostila Bricando de Matemático 2024"
 date = 2024-07-12T08:00:00-03:00
-draft = true
+draft = false
 
 tags = ["caderno"]
 eventos = ["bdm"]
