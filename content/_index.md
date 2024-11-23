@@ -15,5 +15,4 @@ alt = "Bem-vindo ao site PET Matemática UFPR"
 imagem = "arquivos/banner/j3m.webp"
 alt = "J3M banner"
 href = "/eventos/j3m"
-
 ` >}}

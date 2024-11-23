@@ -1,4 +1,4 @@
-{{- if not ($.Page.Scratch.Get "embed-pdf-count") -}}
+{{- if not (.Page.Store.Get "embed-pdf-count") -}}
 
 <script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
 
@@ -78,36 +78,29 @@
   </style>
 {{- end -}}
 
-{{- $.Page.Scratch.Add "embed-pdf-count" 1 -}}
+{{- .Page.Store.Add "embed-pdf-count" 1 -}}
 
-{{- $pdf := .Get "url" -}}
+{{- $pdf := (partial "functions/get-resource.html" (.Get "url")) -}}
+{{ $hash := substr ($pdf | md5) 0 8 }}
 
-{{ if or (strings.HasPrefix $pdf "http:") (strings.HasPrefix $pdf "https:") }}
-  {{ $pdf = (resources.GetRemote $pdf).RelPermalink }}
-{{ else if ($found := .Page.Resources.Get $pdf) }}
-    {{ $pdf = $found.RelPermalink }}
-{{ else if ($found := resources.Get $pdf)}}
-  {{ $pdf = $found.RelPermalink }}
-{{ end }}
-
-<div class="embed-pdf-container" id="embed-pdf-container-{{ substr ($pdf | md5) 0 8 }}">
-    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ substr ($pdf | md5) 0 8 }}">
-        <div class="pdf-loading" id="pdf-loading-{{ substr ($pdf | md5) 0 8 }}"></div>
+<div class="embed-pdf-container" id="embed-pdf-container-{{ $hash }}">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $hash }}">
+        <div class="pdf-loading" id="pdf-loading-{{ $hash }}"></div>
     </div>
-    <canvas class="pdf-canvas" id="pdf-canvas-{{ substr ($pdf | md5) 0 8 }}"></canvas>
+    <canvas class="pdf-canvas" id="pdf-canvas-{{ $hash }}"></canvas>
 </div>
 
-<div class="pdf-paginator" id="pdf-paginator-{{ substr ($pdf | md5) 0 8 }}">
-    <button id="pdf-prev-{{ substr ($pdf | md5) 0 8 }}">Anterior</button>
-    <button id="pdf-next-{{ substr ($pdf | md5) 0 8 }}">Próximo</button> &nbsp; &nbsp;
+<div class="pdf-paginator" id="pdf-paginator-{{ $hash }}">
+    <button id="pdf-prev-{{ $hash }}">Anterior</button>
+    <button id="pdf-next-{{ $hash }}">Próximo</button> &nbsp; &nbsp;
     <span>
-      <span class="pdf-pagenum" id="pdf-pagenum-{{ substr ($pdf | md5) 0 8 }}"></span> / <span class="pdf-pagecount" id="pdf-pagecount-{{ substr ($pdf | md5) 0 8 }}"></span>
+      <span class="pdf-pagenum" id="pdf-pagenum-{{ $hash }}"></span> / <span class="pdf-pagecount" id="pdf-pagecount-{{ $hash }}"></span>
     </span>
-    <a class="pdf-source" id="pdf-source-{{ substr ($pdf | md5) 0 8 }}" href="{{ $pdf }}">[pdf]</a>
+    <a class="pdf-source" id="pdf-source-{{ $hash }}" href="{{ $pdf }}">[pdf]</a>
 </div>
 
 <noscript>
-View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf | md5) 0 8 }}" href="{{ $pdf }}">here</a>.
+Veja o arquivo PDF <a class="pdf-source" id="pdf-source-noscript-{{ $hash }}" href="{{ $pdf }}">aqui</a>.
 </noscript>
 
 <script type="text/javascript">
@@ -131,10 +124,10 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf 
         pageRendering = false,
         pageNumPending = null,
         scale = 3,
-        canvas = document.getElementById('pdf-canvas-{{ substr ($pdf | md5) 0 8 }}'),
+        canvas = document.getElementById('pdf-canvas-{{ $hash }}'),
         ctx = canvas.getContext('2d'),
-        paginator = document.getElementById("pdf-paginator-{{ substr ($pdf | md5) 0 8 }}"),
-        loadingWrapper = document.getElementById('pdf-loadingWrapper-{{ substr ($pdf | md5) 0 8 }}');
+        paginator = document.getElementById("pdf-paginator-{{ $hash }}"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-{{ $hash }}');
 
 
     // Attempt to show paginator and loader if enabled
@@ -174,7 +167,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf 
       });
 
       // Update page counters
-      document.getElementById('pdf-pagenum-{{ substr ($pdf | md5) 0 8 }}').textContent = num;
+      document.getElementById('pdf-pagenum-{{ $hash }}').textContent = num;
     }
 
     /**
@@ -224,7 +217,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf 
       pageNum--;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-prev-{{ substr ($pdf | md5) 0 8 }}').addEventListener('click', onPrevPage);
+    document.getElementById('pdf-prev-{{ $hash }}').addEventListener('click', onPrevPage);
 
     /**
      * Displays next page.
@@ -236,7 +229,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf 
       pageNum++;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-next-{{ substr ($pdf | md5) 0 8 }}').addEventListener('click', onNextPage);
+    document.getElementById('pdf-next-{{ $hash }}').addEventListener('click', onNextPage);
 
     /**
      * Asynchronously downloads PDF.
@@ -244,7 +237,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-{{ substr ($pdf 
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
       pdfDoc = pdfDoc_;
       var numPages = pdfDoc.numPages;
-      document.getElementById('pdf-pagecount-{{ substr ($pdf | md5) 0 8 }}').textContent = numPages;
+      document.getElementById('pdf-pagecount-{{ $hash }}').textContent = numPages;
 
       // If the user passed in a number that is out of range, render the last page.
       if(pageNum > numPages) {

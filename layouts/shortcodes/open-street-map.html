@@ -1,15 +1,7 @@
 <!-- Open Street Map Static Map Shortcode -->
 <!-- https://discourse.gohugo.io/t/embedding-google-maps-in-a-privacy-friendly-way/41575/4 -->
 {{ $id := delimit (slice "map" (partial "functions/uid.html" .)) "-" }}
-{{- $img := .Get "mapImg" -}}
-
-{{ if or (strings.HasPrefix $img "http:") (strings.HasPrefix $img "https:") }}
-  {{ $img = (resources.GetRemote $img).RelPermalink }}
-{{ else if ($found := .Page.Resources.Get $img) }}
-    {{ $img = $found.RelPermalink }}
-{{ else if ($found := resources.Get $img) }}
-  {{ $img = $found.RelPermalink }}
-{{ end }}
+{{- $img := (partial "functions/get-resource.html" (.Get "mapImg")) -}}
 
 <div class="container" id="map-container-{{ $id }}" style="cursor: pointer;">
     <figure>
