@@ -8,7 +8,7 @@ enableEmoji = true
 baseURL = "petmatematica.ufpr.br"
 
 [pagination]
-  pagerSize = 100
+pagerSize = 100
 
 [imaging]
 anchor = "Center"

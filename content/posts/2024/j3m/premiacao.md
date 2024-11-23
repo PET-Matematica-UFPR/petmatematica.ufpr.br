@@ -16,7 +16,7 @@ A Jornada de Matemática, Matemática Aplicada e Educação Matemática celebra 
 | Análise 1              | Lucas Bisoni (UFPR)                                                      | Matheus Erevaldo Krüger Gebeluca (UEPG)            |
 | Projetos Matemáticos 1 | Caminhos Olímpicos na Matemática (UFPR)                                  | Oficina Pedagógica de Matemática (UTFPR)           |
 | Álgebra 1              | Gabrieli Kmiecik (UFPR)                                                  | Gabriela Martins dos Santos (UNICAMP)              |
-| Educação Matemática 1  | Bárbara Borkowski (UTFPR), Matheus Rocha (UTFPR)                         | Wanderson dos Santos Rodrigues (UTFPR)             |
+| Educação Matemática 1  | Bárbara Borkowski (UTFPR) e Matheus Rocha (UTFPR)                         | Wanderson dos Santos Rodrigues (UTFPR)             |
 | Análise 2              | Leonardo Cortez do Nascimento (UFPR)                                     | Ruan Pablo Ronson Luqueti (UTFPR)                  |
 | Projetos Matemáticos 2 | Caminhos Olímpicos na Matemática (UFPR)                                  | Elas vão para Ciências e Matemática - CiMa (UTFPR) |
 | Álgebra 2              | João Gabriel Chiorato (UFPR)                                             | Samuel Adam Trindade de Souza (UFPR)               |

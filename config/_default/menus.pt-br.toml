@@ -47,6 +47,7 @@
  name = "Galeria"
  pareRef = "/galeria"
  weight = 40
+ active = false
 
 [[main]]
  name = "Eventos"
@@ -54,22 +55,22 @@
  weight = 40
 
 [[main]]
+ name = "Jornada da Matemática"
+ parent = "Eventos"
+ pageRef = "/eventos/j3m"
+ weight = 10
+
+[[main]]
  name = "Brincando de Matemático"
  parent = "Eventos"
  pageRef = "/eventos/bdm"
- weight = 10
+ weight = 20
 
 # [[main]]
 #  name = "Brincando de Matemático Junior"
 #  parent = "Eventos"
 #  pageRef = "/eventos/brincando-de-matematico-junior"
-#  weight = 20
-
-[[main]]
- name = "Jornada da Matemática"
- parent = "Eventos"
- pageRef = "/eventos/j3m"
- weight = 30
+#  weight = 30
 
 # [[main]]
 #  name = "Semana da Matemática"
