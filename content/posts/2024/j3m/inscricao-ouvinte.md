@@ -3,7 +3,7 @@ title = "Inscrições de ouvintes J3M 2024"
 date = 2024-09-30T08:00:00-03:00
 draft = false
 
-tags = ["2024"]
+tags = ["inscricao"]
 eventos = ["j3m"]
 +++
 

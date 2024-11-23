@@ -4,7 +4,7 @@ date = 2024-10-14T08:00:00-03:00
 lastmod = 2024-10-18T08:00:00-03:00
 draft = false
 
-tags = ["2024", "cronograma"]
+tags = ["cronograma"]
 eventos = ["j3m"]
 +++
 

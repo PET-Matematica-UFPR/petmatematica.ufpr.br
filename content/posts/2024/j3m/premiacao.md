@@ -2,7 +2,7 @@
 title = "Excelências acadêmicas e menções honrosas J3M 2024"
 date = 2024-11-22T00:08:00-03:00
 
-tags = ["2024"]
+tags = ["premiacao"]
 eventos = ["j3m"]
 prose = false
 +++

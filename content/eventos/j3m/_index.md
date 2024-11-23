@@ -2,7 +2,8 @@
 title = "Jornada da Matemática, Matemática Aplicada e Educação Matemática"
 date = 2024-11-19T23:50:45-03:00
 draft = false
-linkTitle = 'J3M'
+
+linkTitle = "J3M"
 +++
 
 A grande demanda de alunos de graduação interessados em desenvolver e divulgar projetos de pesquisa foi gatilho para decidirmos criar um evento no qual eles possam:

@@ -3,7 +3,7 @@ title = "Certificados J3M 2023"
 date = 2023-11-15T08:00:00-03:00
 draft = false
 
-tags = ["2023"]
+tags = ["certificados"]
 eventos = ["j3m"]
 +++
 

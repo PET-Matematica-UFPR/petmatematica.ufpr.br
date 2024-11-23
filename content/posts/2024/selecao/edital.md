@@ -3,7 +3,7 @@ title = "Edital de Seleção 2024/2"
 date = 2024-09-11T08:00:00-03:00
 draft = false
 
-tags = ["2024"]
+tags = ["edital"]
 eventos = ["selecao"]
 +++
 
