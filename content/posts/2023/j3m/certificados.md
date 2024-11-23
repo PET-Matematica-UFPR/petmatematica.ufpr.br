@@ -7,9 +7,9 @@ tags = ["certificados"]
 eventos = ["j3m"]
 +++
 
-- [Certificados dos palestrante](/arquivos/2023/j3m/j3m_apresentacao_2023.pdf);
-- [Certificados da banca](/arquivos/2023/j3m/j3m_bancas_2023.pdf);
-- [Certificados dos ouvintes](/arquivos/2023/j3m/j3m_ouvintes_2023.pdf);
-- [Certificados das excelências e menções do Dia 1](/arquivos/2023/j3m/j3m_premio1_2023.pdf);
-- [Certificados das excelências e menções do Dia 2](/arquivos/2023/j3m/j3m_premio2_2023.pdf);
-- [Certificados das excelências e menções do Dia 3](/arquivos/2023/j3m/j3m_premio3_2023.pdf).
+- [Certificados](/arquivos/2023/j3m/j3m_apresentacao_2023.pdf) dos palestrante;
+- [Certificados](/arquivos/2023/j3m/j3m_bancas_2023.pdf) da banca;
+- [Certificados](/arquivos/2023/j3m/j3m_ouvintes_2023.pdf) dos ouvintes;
+- [Certificados](/arquivos/2023/j3m/j3m_premio1_2023.pdf) das excelências e menções do Dia 1;
+- [Certificados](/arquivos/2023/j3m/j3m_premio2_2023.pdf) das excelências e menções do Dia 2;
+- [Certificados](/arquivos/2023/j3m/j3m_premio3_2023.pdf) das excelências e menções do Dia 3.
