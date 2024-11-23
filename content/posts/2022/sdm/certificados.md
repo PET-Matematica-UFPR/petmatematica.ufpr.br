@@ -11,22 +11,22 @@ eventos = ["sdm"]
 
 ## Dia 1
 
-- [Certificados](/arquivos/2022/sdm/dia1/sdm_mesa_2022.pdf) dos ouvintes da mesa redonda "Conversa com Professores" a tarde;
-- [Certificados](/arquivos/2022/sdm/dia1/sdm_palestra1_2022.pdf) dos ouvintes da palestra "Apresentando o Curso" a tarde;
-- [Certificados](/arquivos/2022/sdm/dia1/sdm_palestra2_2022.pdf) dos ouvintes da palestra "HQ's como Recurso Didático" a tarde;
-- [Certificados](/arquivos/2022/sdm/dia1/sdm_palestra1_2022.pdf) dos ouvintes da palestra "Apresentando o Curso" a noite.
+- [Certificados](/arquivos/2022/sdm/dia1/sdm_mesa_2022.pdf) dos ouvintes da mesa redonda "Conversa com Professores" à tarde;
+- [Certificados](/arquivos/2022/sdm/dia1/sdm_palestra1_2022.pdf) dos ouvintes da palestra "Apresentando o Curso" à tarde;
+- [Certificados](/arquivos/2022/sdm/dia1/sdm_palestra2_2022.pdf) dos ouvintes da palestra "HQ's como Recurso Didático" à tarde;
+- [Certificados](/arquivos/2022/sdm/dia1/sdm_palestra1_2022.pdf) dos ouvintes da palestra "Apresentando o Curso" à noite.
 
 ## Dia 2
 
-- [Certificados](/arquivos/2022/sdm/dia2/sdm_mesa_tarde_2022.pdf) dos ouvintes da mesa redonda "Conversa com Professores" a tarde;
-- [Certificados](/arquivos/2022/sdm/dia2/sdm_mesa_noite_2022.pdf) dos ouvintes da mesa redonda "Conversa com Professores" a noite;
-- [Certificados](/arquivos/2022/sdm/dia2/sdm_palestra_noite_2022.pdf) dos ouvintes da palestra "Saúde Mental na Graduação" a noite;
+- [Certificados](/arquivos/2022/sdm/dia2/sdm_mesa_tarde_2022.pdf) dos ouvintes da mesa redonda "Conversa com Professores" à tarde;
+- [Certificados](/arquivos/2022/sdm/dia2/sdm_mesa_noite_2022.pdf) dos ouvintes da mesa redonda "Conversa com Professores" à noite;
+- [Certificados](/arquivos/2022/sdm/dia2/sdm_palestra_noite_2022.pdf) dos ouvintes da palestra "Saúde Mental na Graduação" à noite;
 
 ## Dia 3
 
-- [Certificados](/arquivos/2022/sdm/dia3/sdm_mesa_2022.pdf) dos ouvintes da mesa redonda "(Sobre)Vivendo no Exterior" a tarde;
-- [Certificados](/arquivos/2022/sdm/dia3/sdm_palestra_tarde_2022.pdf) dos ouvintes da palestra "Matemática e Arte" a tarde;
-- [Certificados](/arquivos/2022/sdm/dia3/sdm_palestra_noite_2022.pdf) dos ouvintes da palestra "Saúde Mental na Graduação" a noite;
+- [Certificados](/arquivos/2022/sdm/dia3/sdm_mesa_2022.pdf) dos ouvintes da mesa redonda "(Sobre)Vivendo no Exterior" à tarde;
+- [Certificados](/arquivos/2022/sdm/dia3/sdm_palestra_tarde_2022.pdf) dos ouvintes da palestra "Matemática e Arte" à tarde;
+- [Certificados](/arquivos/2022/sdm/dia3/sdm_palestra_noite_2022.pdf) dos ouvintes da palestra "Saúde Mental na Graduação" à noite;
 
 ## Minicursos
 

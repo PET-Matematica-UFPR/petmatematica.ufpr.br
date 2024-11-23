@@ -1,9 +1,9 @@
 +++
 title = "Edital de Seleção 01/2022"
-date = 2024-03-01T08:00:00-03:00
+date = 2022-03-01T08:00:00-03:00
 draft = false
 
-tags = ["edital", "selecao"]
+tags = ["editais", "selecao"]
 eventos = []
 +++
 

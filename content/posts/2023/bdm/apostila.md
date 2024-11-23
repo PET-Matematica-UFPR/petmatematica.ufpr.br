@@ -3,7 +3,7 @@ title = "Apostila Brincando de Matemático 2023"
 date = 2023-07-12T08:00:00-03:00
 draft = false
 
-tags = ["caderno"]
+tags = ["cadernos"]
 eventos = ["bdm"]
 +++
 

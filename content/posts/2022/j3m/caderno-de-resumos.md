@@ -3,7 +3,7 @@ title = "Caderno de Resumos J3M 2022"
 date = 2022-11-04T08:00:00-03:00
 draft = false
 
-tags = ["caderno"]
+tags = ["cadernos"]
 eventos = ["j3m"]
 +++
 

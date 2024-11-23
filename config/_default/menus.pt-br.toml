@@ -98,7 +98,7 @@
 [[main]]
  name = "Certificados"
  parent = "Documentos"
- pageRef = "/documentos/certificados"
+ pageRef = "/tags/certificados"
  weight = 10
 
 [[main]]

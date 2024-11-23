@@ -3,7 +3,7 @@ title = "Ata de Seleção 2022.2"
 date = 2022-12-08T08:00:00-03:00
 draft = false
 
-tags = ["ata","selecao"]
+tags = ["atas","selecao"]
 eventos = []
 +++
 
