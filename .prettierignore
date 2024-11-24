@@ -1,0 +1,9 @@
+/resources/_gen/**
+/static/arquivos/**
+/themes/**
+/node_modules/**
+/assets/css/compiled/**
+/public/**
+**/.git
+**/*.{png,ico}
+/node_modules/**
