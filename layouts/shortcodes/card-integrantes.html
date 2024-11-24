@@ -9,22 +9,26 @@
   {{ $images = $images | append (partial "functions/get-resource.html" .imagem) }}
 {{ end }}
 
+
 <div class="grid-cols-2 grid md:grid-cols-3">
   {{ range $index, $integrante := $integrantes }}
-  <div
-    class="
+    <div
+      class="
     mx-3 mt-6 flex flex-col rounded-lg bg-neutral-50 text-surface shadow-secondary-1 shadow-2xl
     dark:bg-surface-dark dark:text-white dark:bg-neutral-800
-    sm:shrink-0 sm:grow sm:basis-0">
-
-    <img
+    sm:shrink-0 sm:grow sm:basis-0"
+    >
+      <img
         class="w-32 rounded-full mx-auto mt-4 not-prose"
         src="{{ index $images $index }}"
-        alt="Foto {{ $integrante.nome }}" />
+        alt="Foto {{ $integrante.nome }}"
+      />
 
-    <div class="p-4 my-auto">
-      <h5 class="text-xl font-medium leading-tight text-center">{{ $integrante.nome }}</h5>
+      <div class="p-4 my-auto">
+        <h5 class="text-xl font-medium leading-tight text-center">
+          {{ $integrante.nome }}
+        </h5>
+      </div>
     </div>
-  </div>
   {{ end }}
 </div>

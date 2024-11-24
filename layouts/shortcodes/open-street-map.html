@@ -3,12 +3,28 @@
 {{ $id := delimit (slice "map" (partial "functions/uid.html" .)) "-" }}
 {{- $img := (partial "functions/get-resource.html" (.Get "mapImg")) -}}
 
+
 <div class="container" id="map-container-{{ $id }}" style="cursor: pointer;">
-    <figure>
-        <img class="img-fluid" loading="lazy" id="static-map-{{ $id }}" src="{{ $img }}" alt="{{ .Get "alt" }}" title="{{ .Get "title" }} Clique para ver o mapa interativo" width="1280" height="450">
-        <figcaption>Clique para ver o mapa interativo<a href="https://www.openstreetmap.org/copyright" rel="noreferrer noopener" target="_blank"><small><span class="float-end">©OpenStreetMap</span></small></a>                    
-        </figcaption>
-    </figure>
+  <figure>
+    <img
+      class="img-fluid"
+      loading="lazy"
+      id="static-map-{{ $id }}"
+      src="{{ $img }}"
+      alt="{{ .Get "alt" }}"
+      title="{{ .Get "title" }} Clique para ver o mapa interativo"
+      width="1280"
+      height="450"
+    />
+    <figcaption>
+      Clique para ver o mapa interativo<a
+        href="https://www.openstreetmap.org/copyright"
+        rel="noreferrer noopener"
+        target="_blank"
+        ><small><span class="float-end">©OpenStreetMap</span></small></a
+      >
+    </figcaption>
+  </figure>
 </div>
 <script>
 document.getElementById('static-map-{{ $id }}').addEventListener('click', function() {

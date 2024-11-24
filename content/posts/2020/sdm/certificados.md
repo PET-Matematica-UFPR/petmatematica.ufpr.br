@@ -17,7 +17,6 @@ eventos = ["sdm"]
 - [Certificados](/arquivos/2020/sdm/sdm_mesa1_2020.pdf) dos ouvintes da mesa redonda "Atividades profissionais durante a graduação";
 - [Certificados](/arquivos/2020/sdm/sdm_palestra1_2020.pdf) dos ouvintes da palestra "Pressão da produtividade na quarentena";
 
-
 ## Dia 2
 
 - [Certificados](/arquivos/2020/sdm/sdm_mesa2_2020.pdf) dos ouvintes da mesa redonda "Desafio da profissão de professores pesquisadores";

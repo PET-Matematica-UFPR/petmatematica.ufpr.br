@@ -8,4 +8,3 @@ eventos = []
 +++
 
 {{< embed-pdf url="/arquivos/2022/selecao/edital-3_2022.pdf" >}}
-

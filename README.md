@@ -1,6 +1,6 @@
 # www.petmatematica.ufpr.br
 
-Esse é o repositorio oficial do site PET Matemática da UFPR. O site é escrito em [Hugo](https://gohugo.io/) com o tema [Blowfish](https://blowfish.page/). 
+Esse é o repositorio oficial do site PET Matemática da UFPR. O site é escrito em [Hugo](https://gohugo.io/) com o tema [Blowfish](https://blowfish.page/).
 
 ## Pré-requisitos
 
@@ -15,7 +15,7 @@ Clone o repositório localmente, usando a ferramenta [Github Desktop](https://do
 
 ```
 $ git clone https://github.com/PET-Matematica-UFPR/www.petmatematica.ufpr.br.git
-``` 
+```
 
 Para baixar o Hugo, vá em [Releases](https://github.com/gohugoio/hugo/releases), clique em `Show all 24 assets` e baixe a versão `extended` para o seu sistema. Descompacte o executável `hugo` na raíz do repositório.
 
@@ -38,7 +38,9 @@ As documentação do [Hugo](https://gohugo.io/documentation/), [Blowfish](https:
 O Tailwind css é uma biblioteca de estilos, ela nos da uma infinidade de classes. Vamos evitar escrever css's e usar apenas as classes dela. Por exemplo, para mudar a cor do texto e a cor de fundo basta escrever:
 
 ```html
-<p class="text-blue-600 bg-red-800">Esse texto é azul com a cor de fundo vermelha.</p>
+<p class="text-blue-600 bg-red-800">
+  Esse texto é azul com a cor de fundo vermelha.
+</p>
 ```
 
 Há muita, muitas mesmos, classes para usar, vide a [documentação](https://tailwindcss.com/docs/utility-first).
@@ -51,4 +53,4 @@ Beleza, o conteúdo das páginas fica em `content/`, mas como o Hugo converte es
 
 ### Blowfish
 
-É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da inúmeros shortcodes pra por no site. 
+É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da inúmeros shortcodes pra por no site.

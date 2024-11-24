@@ -8,4 +8,3 @@ eventos = []
 +++
 
 {{< embed-pdf url="/arquivos/2022/selecao/ata_selecao_2022.pdf" >}}
-
