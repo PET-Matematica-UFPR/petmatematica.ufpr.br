@@ -3,7 +3,7 @@ title = "Programação J3M 2019"
 date = 2019-11-01T08:00:00-03:00
 draft = false
 
-tags = ["cronograma"]
+tags = ["cronogramas"]
 eventos = ["j3m"]
 +++
 
