@@ -7,7 +7,7 @@ eventos = ["j3m"]
 prose = false
 +++
 
-A Jornada de Matemática, Matemática Aplicada e Educação Matemática celebra a dedicação e o talento dos alunos de graduação, e até mesmo de alguns do ensino médio, ao promover um espaço para o compartilhamento de suas pesquisas. Neste ano, com a participação de 19 bancas avaliadoras, reconhecemos trabalhos que se destacaram pelo rigor acadêmico e pela inovação.
+A Jornada de Matemática, Matemática Aplicada e Educação Matemática celebra a dedicação e o talento dos alunos de graduação, e até mesmo de alguns do ensino médio, ao promover um espaço para o compartilhamento de suas pesquisas.
 
 É com orgulho que anunciamos os premiados desta edição. Confira os destaques abaixo!
 

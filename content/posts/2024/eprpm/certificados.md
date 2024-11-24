@@ -7,4 +7,4 @@ tags = ["certificados"]
 eventos = ["eprpm"]
 +++
 
-- [Certificados](/arquivos/2024/eprpm_2024.pdf) dos participantes
+- [Certificados](/arquivos/2024/eprpm_2024.pdf) dos participantes.

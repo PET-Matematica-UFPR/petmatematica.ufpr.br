@@ -7,4 +7,4 @@ tags = ["inscricao"]
 eventos = ["j3m"]
 +++
 
-Atenção, a data para [inscrição de trabalhos](https://forms.gle/rMwEZzCqnyYpZavE9) foi prorrogada até o dia 06/09
+Atenção, a data para [inscrição de trabalhos](https://forms.gle/rMwEZzCqnyYpZavE9) foi prorrogada até o dia 06/09.

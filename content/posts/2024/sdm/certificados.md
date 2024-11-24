@@ -17,4 +17,4 @@ eventos = ["sdm"]
 - [Certificados](/arquivos/2024/sdm/sdm_minicurso_latex_2024.pdf) dos participantes do minicurso de LaTeX;
 - [Certificados](/arquivos/2024/sdm/sdm_minicurso_2024.pdf) dos ministrantes dos minicursos;
 - [Certificados](/arquivos/2024/sdm/sdm_palestrantes_2024.pdf) dos ministrantes das palestras;
-- [Certificados](/arquivos/2024/sdm/sdm_participantes_mesa_2024.pdf) dos participantes das mesas redonda;
+- [Certificados](/arquivos/2024/sdm/sdm_participantes_mesa_2024.pdf) dos participantes das mesas redonda.

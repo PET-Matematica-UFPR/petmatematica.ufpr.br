@@ -7,4 +7,4 @@ tags = ["certificados", "poincare"]
 eventos = []
 +++
 
-- [Certificados](/arquivos/2020/poincare_ouvintes_2020.pdf) dos ouvintes;
+- [Certificados](/arquivos/2020/poincare_ouvintes_2020.pdf) dos ouvintes.

@@ -7,4 +7,4 @@ tags = ["certificados"]
 eventos = ["bdm"]
 +++
 
-- [Certificados](/arquivos/2022/bdm/bdm_alunos_2022.pdf) dos alunos
+- [Certificados](/arquivos/2022/bdm/bdm_alunos_2022.pdf) dos alunos.
