@@ -143,7 +143,9 @@
       {{ end }}
   
     </section>
-  <footer class="pt-8 max-w-prose print:hidden">
+  <footer class="pt-8 
+    {{ if (.Params.prose | default true) }} max-w-prose {{ else }} max-w-fit {{ end }} 
+  print:hidden">
 
     {{ partial "article-pagination.html" . }}
     {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
