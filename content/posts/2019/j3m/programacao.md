@@ -7,6 +7,6 @@ tags = ["cronograma"]
 eventos = ["j3m"]
 +++
 
-Confira o [cronograma](/arquivos/2019/j3m/j3m_programacao_detalhada_2019.pdf) desse ano.
+Confira a [programação](/arquivos/2019/j3m/j3m_programacao_detalhada_2019.pdf) desse ano.
 
 {{< embed-pdf url="/arquivos/2019/j3m/j3m_programacao_detalhada_2019.pdf" >}}

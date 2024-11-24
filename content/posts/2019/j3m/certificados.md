@@ -13,4 +13,3 @@ eventos = ["j3m"]
 - [Certificados](/arquivos/2019/j3m/j3m_ouvintes_2019.pdf) dos ouvintes;
 - [Certificados](/arquivos/2019/j3m/j3m_excelencia_2019.pdf) das excelências academicas;
 - [Certificados](/arquivos/2019/j3m/j3m_mencao_2019.pdf) das menções honrosas.
-
