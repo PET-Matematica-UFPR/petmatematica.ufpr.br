@@ -2,6 +2,7 @@
 title = "Jornada da Matemática, Matemática Aplicada e Educação Matemática"
 date = 2024-11-19T23:50:45-03:00
 draft = false
+aliases = ["/j3m"]
 
 linkTitle = "J3M"
 +++
