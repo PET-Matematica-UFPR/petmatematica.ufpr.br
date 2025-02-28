@@ -59,6 +59,13 @@ nome = "Bianca Elena Wiltuschnig"
 # lattes = "0000000000000000"
 
 [[exIntegrantes]]
+nome = "Brenda Monteiro Dal Puppo Monteiro"
+imagem = "/arquivos/equipe/Brenda.webp"
+# descricao = "Consectetur adipiscing elit."
+lattes = "0555030394187310"
+orcid = "0000-0003-0804-6145"
+
+[[exIntegrantes]]
 nome = "Bruno Cezar Steinmetz"
 # lattes = "0000000000000000"
 
@@ -295,6 +302,13 @@ nome = "Kevyan Uehara Moraes"
 # lattes = "0000000000000000"
 
 [[exIntegrantes]]
+nome = "Kaiky Yuji Ishiy"
+imagem = "/arquivos/equipe/Kaiky.webp"
+# descricao = "Venenatis neque ac."
+lattes = "0555030394187310"
+orcid = "0000-0003-0804-6145"
+
+[[exIntegrantes]]
 nome = "Lana Muriel Souza dos Santos"
 # lattes = "0000000000000000"
 
@@ -525,6 +539,13 @@ nome = "Ruth Nascimento"
 [[exIntegrantes]]
 nome = "Samantha Mayumi Hasebe Arteman"
 # lattes = "0000000000000000"
+
+[[exIntegrantes]]
+nome = "Samuel Adams Trindade de Souza"
+imagem = "/arquivos/equipe/Samuel.webp"
+# descricao = "Phasellus nec tellus porttitor sem interdum tristique."
+lattes = "0555030394187310"
+orcid = "0000-0003-0804-6145"
 
 [[exIntegrantes]]
 nome = "Silvana Gogolla Mattos"
