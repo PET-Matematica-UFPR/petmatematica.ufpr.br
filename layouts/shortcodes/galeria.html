@@ -1,0 +1,17 @@
+{{- $url := .Get "url" -}}
+
+{{- $id := delimit (slice "galeria" (partial "functions/uid.html" .)) "-" -}}
+{{- $imagens := resources.Match $url -}}
+
+{{- if $imagens -}}
+<div id="{{ $id }}" class="grid grid-cols-2 gap-4 md:grid-cols-4">
+{{- range $imagens -}}
+    <div class="flex">
+        <img 
+            src="{{ .RelPermalink }}"
+            class="not-prose my-auto" 
+        />
+    </div>
+{{- end -}}
+</div>
+{{- end -}}

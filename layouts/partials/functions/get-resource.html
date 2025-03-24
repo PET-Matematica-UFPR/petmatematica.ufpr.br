@@ -1,9 +1,11 @@
-{{ $link := . }}
+{{- $link := . -}}
 
-{{ if or (strings.HasPrefix $link "http:") (strings.HasPrefix $link "https:") }}
-  {{ $link = (resources.GetRemote $link).RelPermalink }}
-{{ else if ($found := resources.Get $link) }}
-  {{ $link = $found.RelPermalink }}
-{{ end }}
+{{- if and 
+    (not (strings.HasPrefix $link "http:")) 
+    (not (strings.HasPrefix $link "https:")) 
+    ($found := resources.Get $link) 
+-}}
+  {{- $link = $found.RelPermalink -}}
+{{- end -}}
 
-{{ return $link }}
+{{- return $link -}}
