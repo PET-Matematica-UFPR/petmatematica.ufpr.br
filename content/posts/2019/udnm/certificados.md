@@ -7,4 +7,4 @@ tags = ["certificados"]
 eventos = ["udnm"]
 +++
 
-- [Certificados](/arquivos/2019/undm/udnm_ouvintes_2019.pdf) dos ouvintes.
+- [Certificados](/arquivos/2019/udnm/udnm_ouvintes_2019.pdf) dos ouvintes.
