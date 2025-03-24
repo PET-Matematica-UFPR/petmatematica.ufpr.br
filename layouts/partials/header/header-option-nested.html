@@ -27,8 +27,9 @@
     >
       <div class="flex flex-col space-y-3">
         {{ range .Children }}
+          {{- $link := (partial "functions/get-resource.html" .URL) -}}
           <a
-            href="{{ .URL }}"
+            href="{{ $link }}"
             {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }}
               target="_blank"
             {{ end }}
