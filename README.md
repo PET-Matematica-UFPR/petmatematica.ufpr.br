@@ -27,7 +27,7 @@ Caso tenha problema em instalar algo, peça ajuda!
 
 Na primeira vez, rode `npm run bootstrap` para baixar as dependencias. E para iniciar o servidor de desenvolvimento use `npm run dev`. No seu navegador, acesse `localhost:1313`, toda mudança será automaticamente atualizada nesse site.
 
-Se estiver usando o VS Code, é recomendado o uso do [terminal integrado](https://code.visualstudio.com/docs/terminal/basics).
+Se estiver usando o VS Code, é recomendado o uso do [terminal integrado](https://code.visualstudio.com/docs/terminal/basics) para rodar esses comandos.
 
 ## Documentação
 
@@ -47,10 +47,8 @@ Há muita, muitas mesmos, classes para usar, vide a [documentação](https://tai
 
 ### Hugo
 
-É o nosso framework, todo o site é construido nele. É um gerador de site estático, escrevemos conteúdo e ele compila em arquivos html para subir pro servidor. Os arquivos na pasta `content/` devem ser do formato `.md` ou `.html` e são o conteúdo das nossas páginas. Por exemplo, o conteúdo da página `/sobre` está todo em `content/sobre.md`.
-
-Beleza, o conteúdo das páginas fica em `content/`, mas como o Hugo converte esse conteúdo em `html`? O tema dita como o arquivo `.html` será propriamente escrito. Na pasta do tema `theme/blowfish/` em `layout/` estão essas diretivas, ou seja, lá que diz como o header, footer e tudo mais são convertidos. Note que também temos uma pasta `layout/`, tudo que está escrito nela sobrescreve as respectivas do tema. Muito raramente vamos precisar mexer nisso. Para ir mais a fundo nisso, leia a [documentação](https://gohugo.io/templates/introduction/) do Hugo.
+É o nosso framework, todo o site é construido nele. É um gerador de site estático, escrevemos conteúdo e ele compila em arquivos `.html` para subir pro servidor. Os arquivos na pasta `content/` devem ser do formato `.md` ou `.html` e são o conteúdo das nossas páginas. Por exemplo, o conteúdo da página `/sobre` está todo em `content/sobre.md`.
 
 ### Blowfish
 
-É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da inúmeros shortcodes pra por no site.
+É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da [inúmeros shortcodes](https://blowfish.page/docs/shortcodes/) pra por no site.
