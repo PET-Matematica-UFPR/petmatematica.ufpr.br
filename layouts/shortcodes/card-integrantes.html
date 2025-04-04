@@ -14,21 +14,31 @@
   {{ range $index, $integrante := $integrantes }}
     <div
       class="
-    mx-3 mt-6 flex flex-col rounded-lg bg-neutral-50 text-surface shadow-secondary-1 shadow-lg
-    dark:bg-surface-dark dark:text-white dark:bg-neutral-800
-    sm:shrink-0 sm:grow sm:basis-0"
+        mx-3 mt-6 flex rounded-lg bg-neutral-50 shadow-lg
+        dark:bg-surface-dark dark:text-white dark:bg-neutral-800
+        sm:shrink-0 sm:grow sm:basis-0
+      "
     >
-      <img
-        class="w-32 rounded-full mx-auto mt-4 not-prose nozoom"
-        src="{{ index $images $index }}"
-        alt="Foto {{ $integrante.nome }}"
-      />
+      <div class="m-auto">
+        <img
+          class="w-32 rounded-full mx-auto mt-4 not-prose nozoom"
+          src="{{ index $images $index }}"
+          alt="Foto {{ $integrante.nome }}"
+        />
 
-      <div class="p-4 my-auto">
-        <h5 class="text-xl font-medium leading-tight text-center">
-          {{ $integrante.nome }}
-        </h5>
+        <div class="p-4">
+          <h5 class="text-xl font-medium leading-tight text-center">
+            {{ $integrante.nome }}
+          </h5>
+        </div>
+        {{ if (or $integrante.orcid $integrante.lattes) }}
+        <div class="p-4 mx-auto pt-0 text-xs dark:text-neutral-300 flex flex-col space-y-1">
+          {{ if $integrante.lattes }}<p class="m-0 mx-auto">Lattes iD: <a href="http://lattes.cnpq.br/{{ $integrante.lattes }}" target="_blank">{{ $integrante.lattes }}</a></p>{{ end }}
+          {{ if $integrante.orcid }}<p class="m-0 mx-auto">Orcid iD: <a href="https://orcid.org/{{ $integrante.orcid }}" target="_blank">{{ $integrante.orcid }}</a></p>{{ end }}
+        </div>
+        {{ end }}
       </div>
+
     </div>
   {{ end }}
 </div>
