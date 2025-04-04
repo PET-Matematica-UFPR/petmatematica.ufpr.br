@@ -102,3 +102,31 @@ imagem = "/arquivos/equipe/Pedro.webp"
 # descricao = ""
 lattes = "5564611156874759"
 # orcid = ""
+
+[[integrantes]]
+nome = "Camilly Silva dos Anjos"
+imagem = "/arquivos/equipe/blank.webp"
+# descricao = ""
+# lattes = ""
+# orcid = ""
+
+[[integrantes]]
+nome = "Kaue Novaki João"
+imagem = "/arquivos/equipe/blank.webp"
+# descricao = ""
+lattes = "1143063992968698"
+# orcid = ""
+
+[[integrantes]]
+nome = "Miguel Augusto Vialich"
+imagem = "/arquivos/equipe/blank.webp"
+# descricao = ""
+lattes = "9232863063992657"
+# orcid = ""
+
+[[integrantes]]
+nome = "Samuel Henrique Gomes Velez Benito"
+imagem = "/arquivos/equipe/blank.webp"
+# descricao = ""
+lattes = "8750524481779681"
+# orcid = ""
