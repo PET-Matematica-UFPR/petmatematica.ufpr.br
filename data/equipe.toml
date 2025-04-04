@@ -2,15 +2,15 @@
 titulo = "Professor Tutor Cleber de Medeira"
 imagem = "/arquivos/equipe/Cleber.png"
 descricao = "Possui graduação em Matemática pela Universidade Estadual de Ponta Grossa (2006), Mestrado em Matemática Aplicada pela Universidade Federal do Paraná (2008) e Doutorado em Matemática pelo Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo - ICMC/USP (2012). Atualmente é professor associado da Universidade Federal do Paraná. Tem experiência na área de Análise Matemática, com ênfase em equações diferencias parciais lineares."
-# lattes = "0555030394187310"
-# orcid = "0000-0003-0804-6145"
+lattes = "0555030394187310"
+orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Pedro Henrique Andrade"
 imagem = "/arquivos/equipe/blank.webp"  
 # descricao = ""
-# lattes = "0555030394187310"
-# orcid = "0000-0003-0804-6145"
+# lattes = ""
+# orcid = ""
 
 [[integrantes]]
 nome = "Ana Carla de Carvalho Honório"
