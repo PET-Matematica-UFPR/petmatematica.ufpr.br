@@ -4,13 +4,14 @@
   "description": "Site do PET Matemática da UFPR",
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently -p \"[{name}]\" -n \"Tailwind CSS,Hugo\" -c \"blue,green\" \"yarpm run watch-tailwind\" \"yarpm run watch-hugo\" ",
-    "watch-tailwind": "node ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+    "watch-tailwind": "npx tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
     "watch-hugo": "hugo serve -D --noHTTPCache --disableFastRender",
-    "build": "cross-env NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit && hugo --cleanDestinationDir -e production --minify",
+    "build": "cross-env NODE_ENV=production npx tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit && hugo --cleanDestinationDir -e production --minify",
     "bootstrap": "git submodule update --init --recursive && yarpm i && yarpm --prefix themes/blowfish/ install",
     "new": "hugo new content"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
     "concurrently": "^9.0.1",
     "cross-env": "^7.0.3",
     "prettier": "^3.3.3",
