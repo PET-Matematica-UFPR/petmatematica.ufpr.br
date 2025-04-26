@@ -14,18 +14,23 @@ Para iniciar o desenvolvimento, é necessário:
 Clone o repositório localmente, usando a ferramenta [Github Desktop](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) (recomendado) ou pelo `git` usando:
 
 ```
-$ git clone https://github.com/PET-Matematica-UFPR/www.petmatematica.ufpr.br.git
+$ git clone https://github.com/PET-Matematica-UFPR/petmatematica.ufpr.br.git
 ```
 
 Para baixar o Hugo, vá em [Releases](https://github.com/gohugoio/hugo/releases), clique em `Show all 24 assets` e baixe a versão `extended` para o seu sistema. Descompacte o executável `hugo` na raíz do repositório.
 
 Em particular no sistema `windows-amd64` (se você não sabe o seu sistema, muito provavelmente é esse), o arquivo se chama `hugo_extended_x.xxx.x_windows-amd64.zip`.
 
-Caso tenha problema em instalar algo, peça ajuda!
-
 ## Desenvolvimento
 
-Na primeira vez, rode `npm run bootstrap` para baixar as dependencias. E para iniciar o servidor de desenvolvimento use `npm run dev`. No seu navegador, acesse `localhost:1313`, toda mudança será automaticamente atualizada nesse site.
+Para instalar as dependências, você precisa rodar estes comandos na pasta do repositório:
+- `git submodule update --init --recursive`. Esse clona os submódulos, tipo o tema Blwofish.
+- `npm install`. Responsável por fazer download das dependência do nosso repositório.
+- `npm --prefix themes/blowfish/ install`. Responsável por fazer download das dependência do tema.
+
+Não é uma boa prática guardar imagens e arquivos grandes no repositório, dito isso, esses arquivos estão sendo guardados no Google Drive divulgacao.petmatufpr@gmail.com. Então é preciso baixar os arquivos do Drive e descompata-los na pasta `assets/arquivos`. Qualquer atualização de imagem deve ser feita no Google Drive também. É um sistema péssimo, estou pensando em outra forma.
+
+E para iniciar o servidor de desenvolvimento use `npm run dev`. No seu navegador, acesse `localhost:1313`, toda mudança será automaticamente atualizada nesse site.
 
 Se estiver usando o VS Code, é recomendado o uso do [terminal integrado](https://code.visualstudio.com/docs/terminal/basics) para rodar esses comandos.
 
