@@ -29,3 +29,5 @@ eventos = ["j3m"]
 # Premiação
 
 {{< galeria url="/arquivos/2023/j3m/fotos/premiacao/*" >}}
+
+Confira as fotos em qualidade original no nosso [Google Drive](https://drive.google.com/drive/folders/11N_BDhmg1bi0mvHgrey5GvaHuN25ALSd?usp=sharing).

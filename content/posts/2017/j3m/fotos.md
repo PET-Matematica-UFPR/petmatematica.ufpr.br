@@ -9,3 +9,5 @@ eventos = ["j3m"]
 +++
 
 {{< galeria url="/arquivos/2017/j3m/fotos/*" >}}
+
+Confira as fotos em qualidade original no nosso [Google Drive](https://drive.google.com/drive/folders/1lyw744wGiHxU78-dYEYocs6AjlXiH-UW?usp=sharing).

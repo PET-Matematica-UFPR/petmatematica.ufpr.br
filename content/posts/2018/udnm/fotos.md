@@ -9,3 +9,5 @@ eventos = ["udnm"]
 +++
 
 {{< galeria url="/arquivos/2018/udnm/fotos/*" >}}
+
+Confira as fotos em qualidade original no nosso [Google Drive](https://drive.google.com/drive/folders/12-IDr_tcSVZbLAZwed9j4Ec89ZCAovez?usp=sharing).
