@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+
+%----------------------------------------------------
+% as duas linhas abaixo devem garantir a acentuação em português, caso não compile o PDF,
+% tente comentar/apagar a linha \usepackage[utf8]{inputenc} ou então use os pacotes de
+% idiomas que você está acostumado (como latin1 e brazil).
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+%----------------------------------------------------
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{lmodern}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{authblk}
+\usepackage{sectsty}
+\usepackage{nopageno}
+\setlength{\affilsep}{4mm}
+
+% define os separadores entre cada autor
+\renewcommand\Authsep{ \\ [2mm]}
+\renewcommand\Authand{ \\ [2mm]}
+\renewcommand\Authands{ \\ [2mm]}
+
+% titulo
+\title{T\'itulo do resumo \\ Uma ou mais linhas}
+
+% autor com afiliação 1
+\author[1]{
+    Nome Sobrenome\thanks{Bolsista }\\ \texttt{email.1@dominio.com}
+}
+
+% autores com afiliação 2
+
+\author[2]{
+    Nome Sobrenome\thanks{Voluntario} \\
+    \texttt{email.2@dominio.com}
+}
+\author[2]{
+    Nome Sobrenome\thanks{Bolsista }\\
+    \texttt{email.3@dominio.com}
+}
+
+% autores com afiliação 3
+
+\author[3]{
+    Nome Sobrenome (Orientador(a))\\
+    \texttt{email.4@dominio.com}
+}
+
+\author[3]{
+    Nome Sobrenome (Corientador(a))\\
+    \texttt{email.5@dominio.com}
+}
+
+\affil[1]{Instituição 1}
+\affil[2]{Instituição 2}
+\affil[3]{Instituição 3}
+
+\date{}
+
+
+
+\begin{document}
+%----------------------------------------------------
+%Formatação das referências
+\renewcommand{\refname}{Referências}
+\sectionfont{\fontsize{12}{12}\selectfont}
+%----------------------------------------------------
+\maketitle
+
+\noindent {\bf Palavras-chave}: palavra 1, palavra 2, palavra 3. \\[2mm]
+
+
+\noindent {\bf Resumo}:
+
+Insira aqui o resumo do seu trabalho. É permitido usar tabelas, gráficos e figuras. O caderno de resumos ficará disponível em formato PDF no site da J3M após o evento.
+
+Fique atento ao número de palavras. O texto do resumo deve ter pelo menos 15 linhas e o trabalho todo (incluindo as referências bibliográficas) não pode ultrapassar o limite de \textbf{três páginas}.
+
+Caso esses limites não sejam respeitados, seu trabalho poderá ser devolvido para adequação ou rejeitado. \\[5mm]
+
+
+Para as Referências Bibliográficas sugerimos seguir o padrão ABNT conforme exemplos disponíveis no endereço:
+
+\verb;http://www.portal.ufpr.br/tutoriais_normaliza/referencia_exemplo.pdf;
+
+Por exemplo, para livros temos os modelos \cite{este livro} e \cite{adams} abaixo:
+
+\begin{thebibliography}{99}
+\bibitem{este livro} SOBRENOME, Nome. \textbf{Título:} subtítulo. Local: Editora, Ano.
+
+\bibitem{adams} ADAMS, F.; LAUDGHLINI, G. \textbf{Uma biografia do universo:} do big-bang à desintegração final. Rio de Janeiro: Zahar, 2001.
+\end{thebibliography}
+
+
+\end{document}
