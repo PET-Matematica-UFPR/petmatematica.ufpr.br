@@ -1,4 +1,4 @@
-# www.petmatematica.ufpr.br
+# petmatematica.ufpr.br
 
 Esse é o repositorio oficial do site PET Matemática da UFPR. O site é escrito em [Hugo](https://gohugo.io/) com o tema [Blowfish](https://blowfish.page/).
 
@@ -28,8 +28,6 @@ Para instalar as dependências, você precisa rodar estes comandos na pasta do r
 - `npm install`. Responsável por fazer download das dependência do nosso repositório.
 - `npm --prefix themes/blowfish/ install`. Responsável por fazer download das dependência do tema.
 
-Não é uma boa prática guardar imagens e arquivos grandes no repositório, dito isso, esses arquivos estão sendo guardados no Google Drive divulgacao.petmatufpr@gmail.com. Então é preciso baixar os arquivos do Drive e descompata-los na pasta `assets/arquivos`. Qualquer atualização de imagem deve ser feita no Google Drive também. É um sistema péssimo, estou pensando em outra forma.
-
 E para iniciar o servidor de desenvolvimento use `npm run dev`. No seu navegador, acesse `localhost:1313`, toda mudança será automaticamente atualizada nesse site.
 
 Se estiver usando o VS Code, é recomendado o uso do [terminal integrado](https://code.visualstudio.com/docs/terminal/basics) para rodar esses comandos.
@@ -56,4 +54,4 @@ Há muita, muitas mesmos, classes para usar, vide a [documentação](https://tai
 
 ### Blowfish
 
-É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da [inúmeros shortcodes](https://blowfish.page/docs/shortcodes/) pra por no site.
+É o tema que usamos, ele faz a maior parte do trabalho por nós. Ele deixa as páginas bonitinhas, e, quando queremos mudar, basta sobrescrever os arquivos em `layout/`. Também nos da [inúmeros shortcodes](https://blowfish.page/docs/shortcodes/) pra por nas páginas.
