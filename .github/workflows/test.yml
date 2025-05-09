@@ -25,4 +25,4 @@ jobs:
       - run: npm --prefix themes/blowfish install
 
       - name: Build site
-      - run: npm run build
+        run: npm run build
