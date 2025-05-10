@@ -27,7 +27,7 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Upload from public via FTP
+      - name: Upload from public
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
