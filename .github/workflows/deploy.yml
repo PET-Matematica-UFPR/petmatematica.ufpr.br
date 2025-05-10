@@ -1,0 +1,38 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    name: Build and upload site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3.0.0
+        with:
+          hugo-version: "0.145.0"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      - run: npm install
+      - run: npm --prefix themes/blowfish install
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload from public via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: "./public/"
+          server-dir: "./test/"
+    
