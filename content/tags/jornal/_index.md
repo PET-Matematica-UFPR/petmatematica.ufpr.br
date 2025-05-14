@@ -1,3 +1,3 @@
 +++
-title = "Joral do PET"
+title = "Jornal do PET"
 +++
