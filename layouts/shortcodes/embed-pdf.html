@@ -62,7 +62,8 @@
 
     #overlayText svg {
       height: clamp(1em, 2vw, 1.4em);
-      width: clamp(1em, 2vw, 1.4em);
+      width: clamp(1em, 2vw, 1.4em);Alright, opening up jam theme suggestions. One suggestion per person, no explanatory notes!
+
     }
 
     @keyframes spin {
@@ -84,21 +85,23 @@
 {{ $hash := substr ($pdf | md5) 0 8 }}
 
 
-<div class="embed-pdf-container" id="embed-pdf-container-{{ $hash }}">
-  <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $hash }}">
-    <div class="pdf-loading" id="pdf-loading-{{ $hash }}"></div>
+<div class="mx-auto w-md">
+  <div class="embed-pdf-container" id="embed-pdf-container-{{ $hash }}">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $hash }}">
+      <div class="pdf-loading" id="pdf-loading-{{ $hash }}"></div>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-{{ $hash }}"></canvas>
   </div>
-  <canvas class="pdf-canvas" id="pdf-canvas-{{ $hash }}"></canvas>
-</div>
 
-<div class="pdf-paginator" id="pdf-paginator-{{ $hash }}">
-  <button id="pdf-prev-{{ $hash }}">Anterior</button>
-  <button id="pdf-next-{{ $hash }}">Próximo</button> &nbsp; &nbsp;
-  <span>
-    <span class="pdf-pagenum" id="pdf-pagenum-{{ $hash }}"></span> /
-    <span class="pdf-pagecount" id="pdf-pagecount-{{ $hash }}"></span>
-  </span>
-  <a class="pdf-source" id="pdf-source-{{ $hash }}" href="{{ $pdf }}">[pdf]</a>
+  <div class="pdf-paginator" id="pdf-paginator-{{ $hash }}">
+    <button id="pdf-prev-{{ $hash }}">Anterior</button>
+    <button id="pdf-next-{{ $hash }}">Próximo</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-{{ $hash }}"></span> /
+      <span class="pdf-pagecount" id="pdf-pagecount-{{ $hash }}"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-{{ $hash }}" href="{{ $pdf }}">[pdf]</a>
+  </div>
 </div>
 
 <noscript>
