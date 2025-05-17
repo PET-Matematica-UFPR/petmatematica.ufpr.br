@@ -2,7 +2,6 @@
 title = "Ex-integrantes"
 draft = false
 
-prose = false
 showdate = false
 +++
 

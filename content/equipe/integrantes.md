@@ -2,7 +2,6 @@
 title = "Integrantes"
 draft = false
 
-prose = false
 showdate = false
 +++
 

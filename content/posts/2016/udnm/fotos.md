@@ -3,7 +3,6 @@ title = "Fotos Um Dia na Matemática 2016"
 date = 2016-08-12T08:00:00-03:00
 draft = false
 
-prose = false
 tags = ["fotos"]
 eventos = ["udnm"]
 +++
