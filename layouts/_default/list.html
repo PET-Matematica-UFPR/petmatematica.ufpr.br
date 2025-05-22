@@ -49,7 +49,7 @@
     </div>
     {{ end }}
     <div class="article-content
-      {{ if (.Params.prose | default true) }} max-w-prose {{ else }} max-w-fit {{ end }}
+      {{ if (.Params.prose | default false) }} max-w-prose {{ else }} max-w-fit {{ end }}
     mb-20">
 
       {{ .Content }}

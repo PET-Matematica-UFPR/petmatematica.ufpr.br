@@ -3,7 +3,6 @@ title = "Fotos Semana da Matemática 2018"
 date = 2018-04-13T08:00:00-03:00
 draft = false
 
-prose = false
 tags = ["fotos"]
 eventos = ["sdm"]
 +++

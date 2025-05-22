@@ -107,7 +107,7 @@
 
         <div
           class="article-content 
-        {{ if (.Params.prose | default true) }}
+        {{ if (.Params.prose | default false) }}
             max-w-prose
           {{ else }}
             max-w-fit
@@ -182,7 +182,7 @@
     </section>
     <footer
       class="pt-8 
-    {{ if (.Params.prose | default true) }}
+    {{ if (.Params.prose | default false) }}
         max-w-prose
       {{ else }}
         max-w-fit

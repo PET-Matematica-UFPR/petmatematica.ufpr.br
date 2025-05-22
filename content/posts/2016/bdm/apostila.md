@@ -8,4 +8,3 @@ eventos = ["bdm"]
 +++
 
 {{< embed-pdf url="/arquivos/2016/bdm/bdm_apostila_2016.pdf" >}}
-
