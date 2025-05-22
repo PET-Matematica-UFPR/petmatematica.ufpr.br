@@ -55,7 +55,7 @@
  weight = 40
 
 [[main]]
- name = "Jornada da Matemática"
+ name = "J3M (Jornada da Matemática)"
  parent = "Eventos"
  pageRef = "/eventos/j3m"
  weight = 10
@@ -118,6 +118,11 @@
  parent = "Documentos"
  url = "/arquivos/documentos/cepe_3014.pdf"
  weight = 40
+
+[[main]]
+ name = "Jornal do PET"
+ pageRef = "/tags/jornal"
+ weight = 50
 
 [[main]]
  pre = "instagram"
