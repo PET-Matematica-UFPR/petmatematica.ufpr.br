@@ -1,0 +1,10 @@
+{{- $href := .Get "href" -}}
+{{- $alt := .Get "alt" -}}
+{{- $image := (partial "functions/get-resource.html" (.Get "image")) -}}
+
+{{ if $href }} <a href="{{ $href }}"> {{ end }}
+    <img
+        src="{{ $image }}"
+        class="w-full not-prose nozoom"
+        alt="{{ $alt }}" />
+{{ if $href }} </a> {{ end }}
