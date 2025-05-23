@@ -70,7 +70,7 @@
     </header>
 
     <section
-      class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"
+      class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row "
     >
       {{ if or (and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
         .TableOfContents "<ul")) (.Site.Params.article.showRelatedPosts | default false)
@@ -181,11 +181,11 @@
 
     </section>
     <footer
-      class="pt-8 
+      class="pt-8
     {{ if (.Params.prose | default false) }}
         max-w-prose
       {{ else }}
-        max-w-fit
+        max-w-full
       {{ end }} 
   print:hidden"
     >
