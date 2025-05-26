@@ -540,7 +540,7 @@ nome = "Samantha Mayumi Hasebe Arteman"
 
 [[exIntegrantes]]
 nome = "Samuel Adams Trindade de Souza"
-imagem = "/arquivos/equipe/Samuel.webp"
+# imagem = "/arquivos/equipe/blank.webp"
 # descricao = "Phasellus nec tellus porttitor sem interdum tristique."
 # lattes = "0555030394187310"
 # orcid = "0000-0003-0804-6145"

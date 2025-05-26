@@ -13,6 +13,13 @@ imagem = "/arquivos/equipe/blank.webp"
 # orcid = ""
 
 [[integrantes]]
+nome = "Pedro Lascowski Laguna"
+imagem = "/arquivos/equipe/blank.webp"  
+# descricao = ""
+# lattes = ""
+# orcid = ""
+
+[[integrantes]]
 nome = "Ana Carla de Carvalho Honório"
 imagem = "/arquivos/equipe/blank.webp"
 # descricao = ""
@@ -35,14 +42,14 @@ lattes = "4901477377340639"
 
 [[integrantes]]
 nome = "Tiago Filipe Pires Galu"
-imagem = "/arquivos/equipe/blank.webp"
+imagem = "/arquivos/equipe/Tiago.webp"
 # descricao = ""
 lattes = "6576831240015857"
 # orcid = "0000-0003-0804-6145"
 
 [[integrantes]]
 nome = "Augusto Henrique da Costa"
-imagem = "/arquivos/equipe/blank.webp"
+imagem = "/arquivos/equipe/Augusto.webp"
 # descricao = ""
 lattes = "1346877141229975"
 # orcid = ""
@@ -98,9 +105,9 @@ lattes = "5564611156874759"
 
 [[integrantes]]
 nome = "Camilly Silva dos Anjos"
-imagem = "/arquivos/equipe/blank.webp"
+imagem = "/arquivos/equipe/Camilly.webp"
 # descricao = ""
-# lattes = ""
+lattes = "8399362000022268"
 # orcid = ""
 
 [[integrantes]]
@@ -119,7 +126,7 @@ lattes = "9232863063992657"
 
 [[integrantes]]
 nome = "Samuel Henrique Gomes Velez Benito"
-imagem = "/arquivos/equipe/blank.webp"
+imagem = "/arquivos/equipe/Samuel.webp"
 # descricao = ""
 lattes = "8750524481779681"
 # orcid = ""
