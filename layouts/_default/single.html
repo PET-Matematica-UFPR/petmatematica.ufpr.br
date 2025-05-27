@@ -16,7 +16,6 @@
       {{ end }}
     {{ end }}
 
-
     <header id="single_header" class="mt-5 {{ if (.Params.prose | default false) }} max-w-prose {{ else }} max-w-fit {{ end }} print:hidden">
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
@@ -100,11 +99,8 @@
         </div>
       {{ end }}
 
-
       <div class="min-w-0 min-h-0 max-w-fit">
         {{ partial "series/series.html" . }}
-
-
         <div
           class="article-content {{ if (.Params.prose | default false) }} max-w-prose {{ else }} max-w-fit {{ end }} mb-20">
           {{ .Content }}
