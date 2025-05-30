@@ -1,6 +1,7 @@
 +++
 title = "Brincando de Matemático"
 draft = false
+aliases = ["/bdm2025"]
 +++
 
 {{< img-w-full image="arquivos/banner/bdm.webp" alt="Dança das simetrias: Brincando com grupos" >}}
