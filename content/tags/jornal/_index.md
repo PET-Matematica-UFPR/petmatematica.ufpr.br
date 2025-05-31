@@ -1,3 +1,0 @@
-+++
-title = "Jornal do PET"
-+++

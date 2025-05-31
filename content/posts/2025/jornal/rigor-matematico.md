@@ -3,7 +3,7 @@ title = "Rigor Matemático: O Cálculo e a Análise em perspectivas históricas"
 date = 2025-05-26T08:00:00-03:00
 draft = false
 
-tags = ["jornal"]
+tags = ["petiscos"]
 eventos = []
 +++
 

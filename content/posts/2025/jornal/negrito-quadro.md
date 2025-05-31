@@ -3,7 +3,7 @@ title = "Você sabia? Negrito de quadro"
 date = 2025-05-13T08:00:00-03:00
 draft = false
 
-tags = ["jornal"]
+tags = ["petiscos"]
 eventos = []
 +++
 

@@ -3,7 +3,7 @@ title = "Quando os teoremas mentem — e por que isso deveria te preocupar"
 date = 2025-05-17T08:00:00-03:00
 draft = false
 
-tags = ["jornal"]
+tags = ["petiscos"]
 eventos = []
 +++
 

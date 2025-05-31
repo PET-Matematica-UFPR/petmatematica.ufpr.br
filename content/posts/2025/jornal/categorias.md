@@ -3,7 +3,7 @@ title = "Categorias: O elo entre as áreas da Matemática"
 date = 2025-05-22T08:00:00-03:00
 draft = false
 
-tags = ["jornal"]
+tags = ["petiscos"]
 eventos = []
 +++
 

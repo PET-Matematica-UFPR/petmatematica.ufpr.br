@@ -3,7 +3,7 @@ title = "Música e a sequência de fibonacci: Uma pequena análise de Lateralus 
 date = 2025-05-27T08:00:00-03:00
 draft = false
 
-tags = ["jornal"]
+tags = ["petiscos"]
 eventos = []
 +++
 
