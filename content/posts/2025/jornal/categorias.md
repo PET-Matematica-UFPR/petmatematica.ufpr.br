@@ -18,7 +18,7 @@ A ideia por trás de enxergar vários objetos de maneira unificada veio pelo con
 Mas afinal, o que é uma categoria?
 
 Uma categoria \\(C\\) é uma quíntupla (\\(Ob\\), \\(Mor\\), \\(dom\\), \\(cod\\), \\(\circ\\)), onde: \\(Ob\\) é sua classe de objetos, isto é, os seus "elementos", \\(Mor\\) a de morfismos ("funções" entre esses "elementos"), \\(dom\\) e \\(cod\\) são "funções" que associam um morfismo a um objeto, e \\(\circ\\) é a composição de morfismos.
-Além disso, precisamos de ter duas condições satisfeitas: quando a composição está bem definida, ela deve ser associativa, e existe uma identidade para cada objeto em \\(C\\)$.
+Além disso, precisamos de ter duas condições satisfeitas: quando a composição está bem definida, ela deve ser associativa, e existe uma identidade para cada objeto em \\(C\\).
 
 Com esta definição podemos enxergar estruturas de maneira geral e concisa: grupos são apenas objetos de \\(Grps\\), anéis de \\(Rng\\) e espaços vetorias de \\(Vec\\). Poderíamos estabelecer morfismos entre estas categorias, isto é, jeitos de transformar um grupo num espaço vetorial, ou um anel em um conjunto, ou talvez até um monóide em um espaço topológico. Estes _morfismos_ de categorias são chamados de _funtores_, e são o centro de muitas teorias.
 
