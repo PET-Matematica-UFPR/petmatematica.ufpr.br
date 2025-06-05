@@ -17,4 +17,8 @@ $$
 
 onde \\(a_i \in \R \\) para todo \\(i=1,2,...,n \\), \\(a_n \neq 0 \\) e para algum \\(n \in \N \\).
 
-Como \\(\R \\) é um corpo, o anel de polinômios correspondente é uma domínio de ideias principais, isto é, para todo ideal \\(I \\) de \\(\R[x] \\) existe um elemento \\(f(x) \in \R[x]\\) tal que \\(I \\) é o ideal gerado por \\(f(x) \\) .
+Como \\(\R \\) é um corpo, o anel de polinômios correspondente é uma domínio de ideias principais, isto é, para todo ideal \\(I \\) de \\(\R[x] \\) existe um elemento \\(f(x) \in \R[x]\\) tal que \\(I \\) é o ideal gerado por \\(f(x) \\). Considere o elemento \\(f(x)=x^2+1 \in \R[x] \\) e o ideal I gerado por \\(f(x) \\):
+
+$$
+I = \langle f(x) \rangle = \lbrace g(x) \in \R[x] \thickspace \vert \thickspace g(x) = f(x) \cdot h(x) \text{ para algum h(x) } \in \R[x] \rbrace
+$$
