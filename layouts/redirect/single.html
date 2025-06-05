@@ -1,0 +1,3 @@
+{{- $link := (partial "functions/get-resource.html" .Params.target) -}}
+
+{{- template "alias.html" (dict "Permalink" $link) -}}
